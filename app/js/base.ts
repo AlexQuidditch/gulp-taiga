@@ -94,14 +94,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			item.innerText = counter
 		};
 		for (let item of placingNode) {
-			if ( choice == '2') {
+			if (choice == '2') {
 				item.style.display = 'none'
 			} else {
 				item.style.display = 'block'
 			}
 		};
 		for (let item of productionNode) {
-			if ( choice == '1') {
+			if (choice == '1') {
 				item.style.display = 'none'
 			} else {
 				item.style.display = 'block'
@@ -125,5 +125,62 @@ document.addEventListener('DOMContentLoaded', () => {
 			document.getElementById('overlay').classList.remove('_opened')
 		}
 	});
+
+	const confirm = {
+		title: 'Секундочку!',
+		text: 'Отправляем данные...',
+		type: 'info',
+		showConfirmButton: false,
+		allowOutsideClick: false
+	},
+		success = {
+			title: 'Отлично!',
+			text: 'Мы скоро с Вами свяжемся!',
+			type: 'success',
+			showCloseButton: true
+		},
+		error = {
+			title: 'Упс...',
+			text: 'Что-то пошло не так! Проверьте правильность данных!',
+			type: 'error',
+			showCloseButton: true
+		};
+
+
+	document.getElementById('modalButton').addEventListener('click', modalSend() );
+
+	function modalSend(): any {
+
+		let modalName: string = $('#modalName').val();
+		let modalPhone: string = $('#modalPhone').val();
+		let modalMessage: string = $('#formMsg').val();
+
+		let modalCounter: string = $("#RangeSlider").prop("value");
+		let modalPeriod: string = $('[name=period]:checked').val();
+		let modalChoice: string = $('[name=choice]:checked').val();
+
+		swal(confirm),
+			$.ajax({
+				type: 'POST',
+				url: '../php/sendmail.php',
+				data: {
+					modalName,
+					modalPhone,
+					modalMessage,
+					modalCounter,
+					modalPeriod,
+					modalChoice
+				},
+				cache: false,
+				success: function(response) {
+					console.log(data);
+					if (response == 1) {
+						swal(success)
+					} else {
+						swal(error)
+					}
+				}
+			})
+    }
 
 });
