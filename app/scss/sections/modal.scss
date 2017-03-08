@@ -60,7 +60,7 @@
 #modalIconSvg {
     position: relative;
     top: -5px;
-	size: 108px 92px;
+	width: 80px;
 	.st1 {
 		fill: #627BCD;
 	}
@@ -81,18 +81,16 @@
 	$opacityHover: 0.6;
 	z-index: 10;
 	position: relative;
-	left: 50%;
-	top: 50%;
+	@include center(xy);
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	align-items: center;
 	width: 900px;
-	padding: 100px 250px 80px 250px;
-	border-radius: 5px;
+	padding: 100px 250px 60px 250px;
 	background-color: $white;
+	border-radius: 5px;
 	@include MDShadow-5;
-	transform: translate(-50%, -50%);
 	@include MQ(Pp) {
 		width: 95%;
 		padding: 40px 20px;
@@ -106,15 +104,16 @@
 	}
 	&__icon {
 		position: absolute;
-		top: -100px;
+		top: -75px;
+		left: 50%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		size: 200px;
+		size: 150px;
 		background-color: $white;
 		border-radius: 50%;
 		@include MDShadow-5;
-		transform: translateX(50%);
+		transform: translateX(-50%);
 		@include MQ(Pp) {
 			display: none;
 		}
