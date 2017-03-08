@@ -9,6 +9,7 @@ const gulp = require('gulp'),
 	cssShort = require('postcss-short'),
     cssnano = require('gulp-cssnano'),
     sourcemaps = require('gulp-sourcemaps'),
+	ts = require('gulp-typescript'),
     useref = require('gulp-useref'),
     uglify = require('gulp-uglify'),
 	htmlmin = require('gulp-html-minifier'),
@@ -63,6 +64,11 @@ gulp.task('browser-sync', () => {
 	})
 });
 
+gulp.task('typescript', () => gulp.src('./app/js/*.ts')
+	.pipe(ts())
+	.pipe(gulp.dest('./app/js'))
+);
+
 // Optimization Tasks
 // ------------------
 
@@ -90,7 +96,7 @@ gulp.task('copies', () => gulp.src(['./app/php/*.php', './app/js/*.min.js'])
 // Cleaning
 gulp.task('clean', () => del.sync('./build').then(cb => cache.clearAll(cb)));
 
-gulp.task('clean:app', () => del.sync(['./app/css/**/*.css', './app/css/**/*.map']));
+gulp.task('clean:app', () => del.sync(['./app/css/**/*']));
 
 gulp.task('clean:build', () => del.sync(['./build/**/*', '!./build/assets', '!./build/assets/**/*']));
 
@@ -115,6 +121,7 @@ gulp.task('build', callback => {
 	runSequence(
 		'clean:build',
 		'sass-build',
+		'typescript',
 		['useref', 'images', 'fonts', 'copies'],
 		'clean:app',
 		callback
