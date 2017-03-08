@@ -10,7 +10,7 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "latest",
-    "bower": "^1.8.0",
+    "bower": "latest",
     "browser-sync": "latest",
     "del": "latest",
     "gulp": "^3.9.0",
@@ -23,13 +23,15 @@
     "gulp-postcss": "latest",
     "gulp-sass": "latest",
     "gulp-sourcemaps": "latest",
+    "gulp-typescript": "latest",
     "gulp-uglify": "latest",
     "gulp-useref": "latest",
     "postcss-assets": "latest",
     "postcss-nested": "latest",
     "postcss-reporter": "latest",
     "postcss-short": "latest",
-    "run-sequence": "latest"
+    "run-sequence": "latest",
+    "typescript": "latest"
   },
   "author": "Alex Quidditch",
   "license": "ISC",
