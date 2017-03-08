@@ -1,0 +1,59 @@
+@import '../../partials/_layout';
+@import '../../partials/_mixins';
+@import '../../partials/_variables';
+
+.intro {
+	size: 100% calc(100vh - 100px);
+	background: url('../assets/img/intro.jpg') no-repeat center center;
+	background-size: cover;
+	&__title {
+		width: 900px;
+		font-weight: 100;
+		line-height: 1.39;
+		text-align: center;
+		color: $white;
+		@include MQ(Pp) {
+			width: auto;
+			font-size: 3rem;
+		}
+		@include MQ(Pl) {
+			width: auto;
+			font-size: 3rem;
+		}
+	}
+	&__subtitle {
+		margin-top: 10%;
+		@include MQ(Pp) {
+			margin-top: 10%;
+		}
+	}
+    &__button {
+		display: flex;
+		align-items: center;
+		height: 50px;
+		margin-top: 50px;
+		padding: 0 35px;
+		padding-left: 26px;
+		color: $white;
+        border-radius: 25px;
+        background-color: $blue;
+		@include MDShadow-2;
+		transition: box-shadow .3s ease-in-out, background-color .3s ease-in-out;
+		&:hover {
+			background-color: mix($white, $blue, 2.5%);
+			@include MDShadow-3
+		}
+		@include MQ(Pp) {
+			margin-top: 0;
+		}
+    }
+}
+
+#calcIconSvg {
+	size: 20px;
+	margin-right: 15px;
+}
+.calcIconSvg {
+	fill: $white;
+	transform: scale(0.039)
+}

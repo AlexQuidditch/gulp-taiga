@@ -1,0 +1,20 @@
+@import "./sections/advertising/intro";
+@import "./sections/advertising/title";
+@import "./sections/advertising/navigate";
+@import "./sections/advertising/services";
+@import "./sections/advertising/clients";
+@import "./sections/advertising/banner";
+@import "./sections/advertising/offer";
+@import "./sections/advertising/advantages";
+@import "./sections/production/player";
+
+.arrowIconSvg {
+    fill: none;
+    stroke: $white;
+    stroke-miterlimit: 10;
+    stroke-width: 20px;
+}
+
+.services {
+	background-color: #eff0f5
+}

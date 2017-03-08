@@ -1,0 +1,29 @@
+{
+  "name": "project-template",
+  "description": "template for your projects",
+  "main": "gulpfile.js",
+  "authors": [
+    "Alex Quidditch"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "flickity": "^2.0.5",
+    "ion.rangeSlider": "^2.1.6",
+    "jquery-labelauty": "^1.1.0",
+    "sweetalert2": "^6.4.2",
+    "normalize-css": "^5.0.0"
+  }
+}

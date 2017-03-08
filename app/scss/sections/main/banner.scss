@@ -1,0 +1,53 @@
+@import '../../partials/_layout';
+@import '../../partials/_mixins';
+@import '../../partials/_variables';
+
+.banner {
+    size: 100% auto;
+	padding: 75px 0;
+	background-image: url('../assets/svg/taiga_bg2.svg');
+	background-color: rgba(#202020, 0.85);
+	background-repeat: no-repeat;
+	background-position: bottom;
+    &__headline {
+    	font-family: 'HelveticaNeueCyr-Light', Arial, sans-serif;
+        font-size: 42px;
+        font-weight: 300;
+        line-height: 2.38;
+        text-align: center;
+        color: $green;
+		letter-spacing: 1.5px;
+		@include MQ(Pp) {
+			line-height: 1.5;
+		}
+    }
+    &__paragraph {
+        margin-top: 45px;
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 1.54;
+        text-align: center;
+        color: $white;
+		@include MQ(Pp) {
+			margin-top: 25px;
+		}
+    }
+	&__button {
+		display: flex;
+		align-items: center;
+		height: 50px;
+		margin-top: 50px;
+		padding: 0;
+		padding-left: 23px;
+		padding-right: 29px;
+		color: $white;
+		border-radius: 25px;
+		background-color: $blue ;
+		@include MDShadow-2;
+		transition: box-shadow .3s ease-in-out, background-color .3s ease-in-out;
+		&:hover {
+			background-color: mix($white, $blue, 2.5%);
+			@include MDShadow-3
+		}
+	}
+}

@@ -1,0 +1,15 @@
+@import '../partials/_layout';
+@include MQ(Pp) {
+	.container,
+	.container_flex-row,
+	.container_flex-column {
+		max-width: 90%;
+	}
+	.intro__titlle {
+		width: auto;
+		font-size: 3rem;
+	}
+	.intro__button {
+		margin-top: 0;
+	}
+}

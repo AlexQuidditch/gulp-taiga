@@ -1,0 +1,8 @@
+@import '../../partials/_layout';
+@import '../../partials/_mixins';
+@import '../../partials/_variables';
+
+.divider {
+	height: 30px;
+	background-color: $white
+}

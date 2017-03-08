@@ -1,0 +1,91 @@
+@import '../../partials/_layout';
+@import '../../partials/_mixins';
+@import '../../partials/_variables';
+
+.intro {
+	padding: 30px 50px;
+	background-image: url('../assets/img/profile_custom_bg.jpg');
+	background-size: cover;
+}
+
+.intro-controls {
+	text-align: right;
+	&__button {
+		width: 160px;
+		height: 42px;
+		text-align: center;
+		color: $white transparent;
+		cursor: pointer;
+  		border: solid 1px $white;
+		border-radius: 21px;
+		@include MDShadow-1;
+		transition:
+			box-shadow .3s ease-in-out,
+			background-color .3s ease-in-out,
+			border-color .3s ease-in-out,
+			color .3s ease-in-out;
+			&:hover {
+				@include MDShadow-2;
+			}
+		&._blue {
+			margin-left: 20px;
+			color: $white $blue;
+			border-color: $blue;
+			&:hover {
+				background-color: mix($white, $blue, 5%);
+				border-color: mix($white, $blue, 5%);
+			}
+		}
+	}
+}
+
+.intro-container {}
+
+.profile-card {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	&__name {
+		font: 300 42px 'HelveticaNeueCyr-Light', Arial, sans-serif;
+		color: $white;
+	}
+	&__status {
+		margin-top: 1rem;
+		font: 300 1rem 'HelveticaNeueCyr-Light', Arial, sans-serif;
+		color: $white;
+	}
+	&__avatar {
+		size: 150px;
+		margin-top: 25px;
+		border: solid 2px $white;
+		border-radius: 50%
+	}
+	&__statictics {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 40px;
+		color: $white;
+	}
+	&__statictics-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 13px;
+	}
+	&__statictics-icon {
+		size: 20px;
+		margin-right: 10px;
+	}
+	&__statictics-counter {
+		color: $white;
+	}
+}
+
+.stat-icons {
+	size: 20px;
+	.like,
+	.photo,
+	.video {
+		fill: $white
+	}
+}

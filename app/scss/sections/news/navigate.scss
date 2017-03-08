@@ -1,0 +1,46 @@
+@import '../../partials/_layout';
+@import '../../partials/_mixins';
+@import '../../partials/_variables';
+
+.navigate {
+	height: 90px;
+	background-color: #e1e2e6;
+}
+
+.navigate-list {
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+	}
+	&__anchor {
+		width: 172px;
+		padding: 13px 0;
+		text-align: center;
+		color: $black transparent;
+  		border: solid 1px $black;
+		border-radius: 21px;
+		@include MDShadow-1;
+		transition:
+			box-shadow .3s ease-in-out,
+			background-color .3s ease-in-out,
+			border-color .3s ease-in-out,
+			color .3s ease-in-out;
+			&:hover {
+				@include MDShadow-2;
+			}
+		&._active {
+			color: $white $blue;
+			border-color: $blue;
+			@include MDShadow-2;
+			&:hover {
+				background-color: mix($white, $blue, 5%);
+				border-color: mix($white, $blue, 5%);
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+<svg id="checkSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+	<style type="text/css">
+		.checkSvg-circle {
+		  fill-rule: evenodd;
+		  clip-rule: evenodd;
+		  fill: transparent;
+		  transition: fill .3s ease-in-out
+        }
+		.checkSvg-stroke {
+		  opacity: 0.2;
+		  fill-rule: evenodd;
+		  clip-rule: evenodd;
+		  fill: none;
+		  stroke: #26292C;
+		  stroke-width: 1.92;
+		  stroke-miterlimit: 10;
+		}
+	</style>
+	<path class="checkSvg-stroke" d="M10.6,1h28.8c5.3,0,9.6,4.3,9.6,9.6v28.8c0,5.3-4.3,9.6-9.6,9.6H10.6C5.3,49,1,44.7,1,39.4V10.6 C1,5.3,5.3,1,10.6,1z"/>
+	<path class="checkSvg-circle" d="M20,10h10c5.5,0,10,4.5,10,10v10c0,5.5-4.5,10-10,10H20c-5.5,0-10-4.5-10-10V20C10,14.5,14.5,10,20,10z"/>
+</svg>

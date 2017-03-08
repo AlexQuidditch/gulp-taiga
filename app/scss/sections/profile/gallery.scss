@@ -1,0 +1,77 @@
+@import '../../partials/_layout';
+@import '../../partials/_mixins';
+@import '../../partials/_variables';
+
+.gallery {
+	padding: 25px 0;
+	background-color: #eff0f5;
+}
+
+.gallery-card {
+	position: relative;
+	size: 365px;
+	margin: 20px 14px;
+	cursor: pointer;
+	@include MDShadow-2;
+	transition: box-shadow .3s ease-in-out;
+	&:hover {
+		@include MDShadow-3;
+		.gallery-card__close-button {
+			opacity: 1;
+		}
+	}
+	&._add {
+		background-color: rgba($black, 0.2)
+	}
+	&__close-button {
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		size: 45px;
+		padding: 10px;
+		background-color: rgba($black, 0.5);
+		cursor: pointer;
+		border: none;
+		transition: opacity .3s ease-in-out;
+	}
+	&__title {
+		margin-top: 2rem;
+		font: 300 1rem 'HelveticaNeueCyr-Light', Arial, sans-serif;
+		color: $white;
+	}
+	&__img {}
+	&__statistics {
+		position: absolute;
+		bottom: 0;
+		display: flex;
+		size: 100% 50px;
+	}
+	&__statictics-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		margin: 0 13px;
+	}
+	&__statictics-icon {
+		size: 25px;
+		margin-right: 10px;
+	}
+	&__statictics-counter {
+		color: $white;
+	}
+}
+
+#add {
+	size: 120px;
+	fill: $white
+}
+
+.g-stat-icons {
+	size: 25px;
+	fill: $white;
+}
+
+#closeIcon {
+	fill: rgba($white, .5)
+}

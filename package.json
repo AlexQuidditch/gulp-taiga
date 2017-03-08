@@ -1,0 +1,32 @@
+{
+  "name": "project-template",
+  "version": "1.0.0",
+  "description": "template for your projects",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "bower": "^1.8.0",
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "^3.9.0",
+    "gulp-cache": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-html-minifier": "latest",
+    "gulp-if": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-plumber": "latest",
+    "gulp-postcss": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "gulp-useref": "latest",
+    "postcss-assets": "latest",
+    "postcss-nested": "latest",
+    "postcss-reporter": "latest",
+    "postcss-short": "latest",
+    "run-sequence": "latest"
+  },
+  "author": "Alex Quidditch",
+  "license": "ISC"
+}

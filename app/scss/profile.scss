@@ -1,0 +1,39 @@
+@import "./sections/profile/intro";
+@import "./sections/profile/devider";
+@import "./sections/profile/gallery";
+
+#searchIcon {
+	size: 26px;
+	.searchIcon {
+		fill: #fff;
+	}
+}
+
+.header-search {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	size: 550px 50px;
+	margin-left: 95px;
+	padding: 0 4px;
+	padding-left: 25px;
+	cursor: pointer;
+	border: solid 1px $black;
+	border-radius: 25px;
+	&__iinput {
+		width: 415px;
+		border: none;
+	}
+	&__button {
+		size: 90px 42px;
+		background-color: $blue;
+		cursor: pointer;
+		border: none;
+		border-radius: 21px;
+	}
+}
+
+.header-singin {
+	flex-basis: 25%;
+}

@@ -1,0 +1,72 @@
+
+@import './partials/_layout';
+@import './partials/_mixins';
+@import './partials/_variables';
+
+@import './layout/resets';
+
+.wrapper {
+	@include font-smoothing;
+	color: $black;
+}
+
+.container {
+    size: 100%;
+    max-width: 1180px;
+    margin: auto;
+}
+
+.container_flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+	@include MQ(Pp) {
+		flex-direction: column;
+	}
+	@include MQ(Pl) {
+		flex-direction: column;
+	}
+}
+
+.container_flex-column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@include MQ(Pp) {
+	.container,
+	.container_flex-row,
+	.container_flex-column {
+		max-width: 95%;
+	}
+}
+
+@include MQ(Pl) {
+	.container,
+	.container_flex-row,
+	.container_flex-column {
+		max-width: 95%;
+	}
+}
+
+.main {
+	background-color: #eff0f5
+}
+
+@import "./sections/header";
+@import "./sections/footer";
+
+@import "./sections/modal"

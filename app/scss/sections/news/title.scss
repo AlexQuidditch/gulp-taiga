@@ -1,0 +1,15 @@
+@import '../../partials/_layout';
+@import '../../partials/_mixins';
+@import '../../partials/_variables';
+
+.title {
+	height: 150px;
+	.container_flex-row {
+		justify-content: center;
+		align-items: center;
+	}
+	&__title {
+		font: 400 42px 'HelveticaNeueCyr-Medium', Arial, sans-serif;
+		color: $black
+	}
+}
