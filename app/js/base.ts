@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		let productionNode: any = document.querySelectorAll('[productionNode]');
 
 		for (let item of pricePlaces) {
-			item.innerText = `${periodPrice} рублей / месяц`
+			item.innerText = `${periodPrice} рублей`
 		};
 		for (let item of counterPlaces) {
 			item.innerText = counter
