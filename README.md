@@ -9,8 +9,9 @@
 ### Workflow
 * Clone this repo
 
+```
 $ git clone https://github.com/AlexQuidditch/gulp-taiga.git
-
+```
 * run the `install` command after cloning this repo.
 ```
 $ ${your package manager} install
