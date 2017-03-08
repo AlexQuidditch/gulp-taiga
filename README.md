@@ -1,11 +1,21 @@
-# Gulp Project Template by Alex Quidditch
+# Gulp-Taiga Frontend
 
-Based on CSS Tricks tutorial repo. 
+Global Dependencies:
+- Yarn / NPM
+- Bower
+- Gulp
+- TypeScript
 
 * Clone this repo
 
-$ git clone 
+$ git clone https://github.com/AlexQuidditch/gulp-taiga.git
 
-* run the `npm install` command after cloning this repo.
+* run the `${your package manager} install` command after cloning this repo.
 
-$ npm i# gulp-taiga
+$ ${your package manager} install
+
+$ ${your package manager} run dev
+
+or
+
+$ ${your package manager} run build

@@ -1,6 +1,7 @@
 {
-  "name": "project-template",
-  "description": "template for your projects",
+  "name": "gulp-taiga",
+  "version": "1.0.0",
+  "description": "gulp-taiga",
   "main": "gulpfile.js",
   "authors": [
     "Alex Quidditch"
@@ -16,10 +17,8 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "jquery": "^3.1.1"
-  },
   "devDependencies": {
+    "jquery": "^3.1.1",
     "flickity": "^2.0.5",
     "ion.rangeSlider": "^2.1.6",
     "jquery-labelauty": "^1.1.0",

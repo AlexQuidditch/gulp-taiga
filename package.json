@@ -1,8 +1,12 @@
 {
-  "name": "project-template",
+  "name": "gulp-taiga",
   "version": "1.0.0",
-  "description": "template for your projects",
+  "description": "gulp-taiga",
   "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "latest",
@@ -28,5 +32,6 @@
     "run-sequence": "latest"
   },
   "author": "Alex Quidditch",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": "https://github.com/AlexQuidditch/gulp-taiga.git"
 }
