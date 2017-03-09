@@ -1,6 +1,6 @@
 @import "./sections/advertising/intro";
 @import "./sections/profile/devider";
-@import "./sections/main/news";
+@import "./sections/gallery/news";
 @import "./sections/production/title";
 @import "./sections/gallery/navigate";
 @import "./sections/gallery/gallery";
@@ -45,17 +45,61 @@
 	position: absolute;
 	left: 0;
 	width: 125px;
+	@include MQ(Pp) {
+		display: none;
+	}
 }
 
 .news {
 	position: static;
 	bottom: auto;
 	background-color: #eff0f5;
+	@include MQ(Pp) {
+		height: 320px;
+	}
 	.container {
 		position: relative;
 	}
 	&__buttons-container {
 		top: 55px;
 		right: 0%;
+		@include MQ(Pp) {
+			top: auto;
+			bottom: 25px;
+		}
+	}
+}
+
+.header-menu-trigger {
+	display: flex;
+	flex-flow: column wrap;
+	padding: 0 20px;
+}
+
+.header-search {
+	margin-left: 25px;
+	@include MQ(Pp) {
+		display: none;
+	}
+}
+
+.header__menu {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	height: 100%;
+	margin-left: 76px;
+	@include MQ(Pp) {
+		display: none;
+	}
+	@include MQ(Pl) {
+		display: none;
+	}
+	&._mobile {
+		display: block;
+		&._opened {
+			opacity: 1;
+			visibility: visible;
+		}
 	}
 }

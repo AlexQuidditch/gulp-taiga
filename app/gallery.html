@@ -84,20 +84,25 @@
 					</svg>
 				</div>
 
-				<!-- <ul id="headerMenu" class="header__menu">
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">Главная</a>
+				<a id="trigger" href="#" class="header-menu-trigger">
+					<svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<path class="menuIcon" d="M0,426.67H512V369.78H0ZM0,284.44H512V227.56H0ZM0,85.33v56.89H512V85.33Z" />
+					</svg>
+				</a>
+				<ul id="headerMenu" class="header__menu _mobile">
+					<li class="header__menu-item _mobile">
+						<a href="/" class="header__menu-link _active">Главная</a>
 					</li>
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">Новости и акции</a>
+					<li class="header__menu-item _mobile">
+						<a href="/news.html" class="header__menu-link">Новости и акции</a>
 					</li>
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">Услуги</a>
+					<li class="header__menu-item _mobile">
+						<a href="/advertising.html" class="header__menu-link">Услуги</a>
 					</li>
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">О компании</a>
+					<li class="header__menu-item _mobile">
+						<a href="/about.html" class="header__menu-link">О компании</a>
 					</li>
-				</ul> -->
+				</ul>
 
 				<label for="search" class="header-search">
 					<input id="search" class="header-search__iinput" type="text" placeholder="Найти фото, видео или пользователя...">
@@ -273,8 +278,8 @@
 								<span class="gallery-card__statictics-counter">1</span>
 							</li>
 
-							<li class="gallery-card__statictics-item">
-								<span class="gallery-card__statictics-counter">4 минуты назад</span>
+							<li class="gallery-card__statictics-item _date">
+								<span class="gallery-card__statictics-counter _date">4 минуты назад</span>
 							</li>
 
 						</ul>

@@ -19,6 +19,10 @@
 			opacity: 1;
 		}
 	}
+	@include MQ(Pp) {
+		max-width: 95%;
+		height: auto;
+	}
 	&._add {
 		background-color: rgba($black, 0.2)
 	}
@@ -34,28 +38,48 @@
 		transition: opacity .3s ease-in-out;
 	}
 	&__title {
+		margin: 8px 22px;
 		font: 400 20px 'HelveticaNeueCyr-Medium', Arial, sans-serif;
-		color: $white;
+		color: $black;
 	}
-	&__img {}
+	&__text {
+		margin: 0 22px;
+		margin-bottom: 10px;
+		font: 300 12px 'HelveticaNeueCyr-Light', Arial, sans-serif;
+		color: $black;
+	}
+	&__img {
+		@include MQ(Pp) {
+			max-width: 100%;
+		}
+	}
 	&__statistics {
-		position: absolute;
-		bottom: 0;
 		display: flex;
-		size: 100% 50px;
+		size: 100% auto;
+	    padding: 15px 22px;
+		padding-top: 0;
 	}
 	&__statictics-item {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin: 0 13px;
+		height: 1rem;
+		margin-right: 20px;
+		&._date {
+			position: absolute;
+			right: 0;
+		}
 	}
 	&__statictics-icon {
-		width: 20px;
-		margin-right: 10px;
+		width: 15px;
+		margin-right: 5px;
 	}
 	&__statictics-counter {
-		color: $white;
+		font-size: 12px;
+		color: $blue;
+		&._date {
+			color: $black;
+		}
 	}
 }
 
@@ -65,7 +89,7 @@
 }
 
 .g-stat-icons {
-	size: 25px;
+	size: 15px;
 	fill: $blue
 }
 
