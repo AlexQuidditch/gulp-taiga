@@ -119,13 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.getElementById('overlay').classList.remove('_opened')
 	});
 
-	document.addEventListener('keypress', function(e) {
-		let key = e.which || e.keyCode;
-		if (key == 27) {
-			document.getElementById('overlay').classList.remove('_opened')
-		}
-	});
-
 	const confirm = {
 		title: 'Секундочку!',
 		text: 'Отправляем данные...',
