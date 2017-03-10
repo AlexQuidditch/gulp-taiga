@@ -5,6 +5,9 @@
 .gallery {
 	padding: 25px 0;
 	background-color: #eff0f5;
+	.container_flex-row {
+		justify-content: flex-start;
+	}
 }
 
 .gallery-card {
