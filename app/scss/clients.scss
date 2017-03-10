@@ -1,0 +1,36 @@
+@import './partials/_layout';
+@import './partials/_mixins';
+@import './partials/_variables';
+
+@import "./sections/advertising/intro";
+@import "./sections/advertising/title";
+@import "./sections/advertising/navigate";
+@import "./sections/advertising/services";
+@import "./sections/advertising/clients";
+@import "./sections/advertising/banner";
+@import "./sections/advertising/offer";
+@import "./sections/advertising/advantages";
+@import "./sections/production/player";
+
+#likeIconSvg {
+	position: absolute;
+	left: 0;
+	size: 100px;
+	fill: $blue
+}
+
+.arrowIconSvg {
+	fill: none;
+	stroke: #fff;
+	stroke-miterlimit: 10;
+	stroke-width: 20px;
+}
+
+.title {
+	background-color: $white
+}
+
+.services {
+	height: 300px;
+	background-color: #eff0f5;
+}
