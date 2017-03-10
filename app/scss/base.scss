@@ -72,11 +72,12 @@
 	justify-content: center;
 	align-items: center;
 	height: 100%;
+	margin-left: 60px;
 	&__link {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
-		align-items: center;		
+		align-items: center;
 	}
 	&__name {
 		font: 700 1rem 'HelveticaNeueCyr-Bold', Arial,sans-serif;
