@@ -5,7 +5,8 @@
             "sass.enabled": false,
             "linting.collapsed": true,
             "debug.showErrorsInStatusBar": true,
-            "noDistractions": true
+            "noDistractions": true,
+            "eqFTP.projectsPaths": []
         }
     }
 }

@@ -1,98 +1,104 @@
 <div id="overlay" class="overlay">
 
-	<div id="modal" class="modal">
+		<div id="modal" class="modal">
 
-		<form
-			class="modal-form"
-			action=""
-			method="post">
+			<form id="modalForm" class="modal-form">
 
-			<header class="modal-form__header">
-				<span class="modal-form__icon">
-					<svg id="modalIconSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 273 230" xml:space="preserve">
-						<path class="st1" d="M253.5,54.9H142.9L193,0l-54.6,50.1l-22.3-32.4l17.1,37.2H19.7C8.8,54.9,0,63.8,0,74.6v135.8c0,10.9,8.8,19.7,19.7,19.7h233.8c10.9,0,19.7-8.8,19.7-19.7V74.6C273.2,63.8,264.4,54.9,253.5,54.9z M265.9,210.4c0,6.8-5.6,12.4-12.4,12.4H19.7c-6.8,0-12.4-5.6-12.4-12.4V74.6c0-6.8,5.6-12.4,12.4-12.4h233.8c6.8,0,12.4,5.6,12.4,12.4V210.4z" /><polygon class="st4" points="178.6,109.2 140.3,189.6 216.9,189.6" /><polygon class="st4" points="89.6,109.2 51.3,189.6 127.9,189.6" /><polygon class="st1 st3" points="133.5,79.7 81.2,189.6 185.9,189.6" />
-					</svg>
-				</span>
-				<h2 class="modal__headline">Оставить заявку</h2>
-				<span id="modalClose" class="modal__headline">
-					<svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 442 512">
-						<path class="closeIcon" d="M441.74-.42c-.63,1-1.22,2.09-1.9,3.09L270.39,252.9c-2.44,3.61-2.44,3.61,0,7.32L436.51,508.33c.56.84,1.12,1.69,2,3-1.33.09-2.22.2-3.1.2q-43.42,0-86.84.06a4.33,4.33,0,0,1-4.12-2.35q-61.8-94.95-123.68-189.84c-.33-.51-.65-1-1-1.52-1.47-2.14-2.94-2.18-4.38,0-3.61,5.4-7.17,10.83-10.76,16.25Q146.86,421.47,89.18,508.86a5.22,5.22,0,0,1-5,2.72c-27-.08-54.08-.05-81.12-.05H-.28c.8-1.28,1.31-2.14,1.86-3L167.29,258c2.75-4.16,2.76-4.16,0-8.27Q85.28,126.14,3.25,2.51A26,26,0,0,1,1.79-.42H95.91c.47.82.91,1.66,1.41,2.45q61.54,96.63,123,193.31c1.88,3,4.09,3.12,6.08,0Q276.72,117,327.23,38.72,339.81,19.18,352.29-.42Z"/>
-					</svg>
-				</span>
-			</header>
+				<header class="modal-form__header">
+					<span class="modal-form__icon">
+						<svg id="modalIconSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 273 230" xml:space="preserve">
+							<path class="st1" d="M253.5,54.9H142.9L193,0l-54.6,50.1l-22.3-32.4l17.1,37.2H19.7C8.8,54.9,0,63.8,0,74.6v135.8c0,10.9,8.8,19.7,19.7,19.7h233.8c10.9,0,19.7-8.8,19.7-19.7V74.6C273.2,63.8,264.4,54.9,253.5,54.9z M265.9,210.4c0,6.8-5.6,12.4-12.4,12.4H19.7c-6.8,0-12.4-5.6-12.4-12.4V74.6c0-6.8,5.6-12.4,12.4-12.4h233.8c6.8,0,12.4,5.6,12.4,12.4V210.4z" /><polygon class="st4" points="178.6,109.2 140.3,189.6 216.9,189.6" /><polygon class="st4" points="89.6,109.2 51.3,189.6 127.9,189.6" /><polygon class="st1 st3" points="133.5,79.7 81.2,189.6 185.9,189.6" />
+						</svg>
+					</span>
+					<h2 class="modal__headline">Оставить заявку</h2>
+					<button id="modalClose" class="modal__close">
+						<svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 442 512">
+							<path class="closeIcon" d="M441.74-.42c-.63,1-1.22,2.09-1.9,3.09L270.39,252.9c-2.44,3.61-2.44,3.61,0,7.32L436.51,508.33c.56.84,1.12,1.69,2,3-1.33.09-2.22.2-3.1.2q-43.42,0-86.84.06a4.33,4.33,0,0,1-4.12-2.35q-61.8-94.95-123.68-189.84c-.33-.51-.65-1-1-1.52-1.47-2.14-2.94-2.18-4.38,0-3.61,5.4-7.17,10.83-10.76,16.25Q146.86,421.47,89.18,508.86a5.22,5.22,0,0,1-5,2.72c-27-.08-54.08-.05-81.12-.05H-.28c.8-1.28,1.31-2.14,1.86-3L167.29,258c2.75-4.16,2.76-4.16,0-8.27Q85.28,126.14,3.25,2.51A26,26,0,0,1,1.79-.42H95.91c.47.82.91,1.66,1.41,2.45q61.54,96.63,123,193.31c1.88,3,4.09,3.12,6.08,0Q276.72,117,327.23,38.72,339.81,19.18,352.29-.42Z"/>
+						</svg>
+					</button>
+				</header>
 
-			<section class="modal-form__body">
+				<section class="modal-form__body">
 
-				<div class="modal-form__container">
-					<input class="modal-form__input"
-						id="modalName"
-						type="text"
-						placeholder="Имя"
-						required />
-				</div>
-
-				<div class="modal-form__container">
-					<input class="modal-form__input"
-						id="modalPhone"
-						type="tel"
-						placeholder="Телефон"
-						required />
-				</div>
-
-				<div class="modal-form__container _side">
-					<label class="modal-form__radio">
-						<input class="modal-form__radio-button"
-							data-labelauty="Не звоните мне"
-							type="checkbox"
-							name="choice" />
-					</label>
-				</div>
-
-				<div class="modal-form__container">
-					<input class="modal-form__input"
-						id="modalName"
-						type="text"
-						placeholder="Имя"
-						required />
-				</div>
-
-				<hr class="modal-form__divider"/>
-
-				<div class="modal-form__container">
-					<span class="modal-form__choices">Ролик: <span id="counter2" class="modal-form__choice">10 секунд,</span>&nbsp;<span id="choice" class="modal-form__choice">производство и размещение</span></span>
-				</div>
-
-				<div class="modal-form__container">
-					<div class="modal-form__prices">
-						<ul class="modal-form__price-list">
-							<li class="modal-form__price-item">
-								<span class="modal-form__pretext">&nbsp;Размещение:</span>
-								<span class="modal-form__value">&nbsp;11 200 рублей / месяц</span>
-							</li>
-							<li class="modal-form__price-item">
-								<span class="modal-form__pretext">&nbsp;Производство:</span>
-								<span class="modal-form__value">&nbsp;от 3 000 рублей / ролик</span>
-							</li>
-						</ul>
+					<div class="modal-form__container">
+						<input class="modal-form__input"
+							id="modalName"
+							type="text"
+							placeholder="Имя"
+							required />
 					</div>
-				</div>
 
-			</section>
+					<div class="modal-form__container">
+						<input class="modal-form__input"
+							id="modalPhone"
+							type="mail"
+							placeholder="E-mail"
+							required />
+					</div>
 
-			<footer class="modal-form__footer">
-				<button
-					id="footerButton"
-					class="modal-form__button"
-					type="submit"
-					>Отправить заявку</button>
-					<span
-						id="footerAlert"
-						class="modal-form__alert _is-show"
-						>Заявка отправлена!</span>
-			</footer>
+					<div class="modal-form__container _side">
+						<label class="modal-form__radio">
+							<input class="modal-form__radio-button"
+								data-labelauty="Не звоните мне"
+								type="checkbox"
+								name="phoneCancel" />
+						</label>
+					</div>
 
-		</form>
+					<div class="modal-form__container">
+						<input class="modal-form__input"
+							id="modalName"
+							type="text"
+							placeholder="Имя"
+							required />
+					</div>
+
+					<hr class="modal-form__divider"/>
+
+					<div class="modal-form__container">
+						<span class="modal-form__choices">
+							Ролик:
+							<span class="modal-form__choice" counterPlace>
+								10
+							</span>
+							 секунд,
+							<span id="choice" class="modal-form__choice">
+								производство и размещение
+							</span>
+						</span>
+					</div>
+
+					<div class="modal-form__container">
+						<div class="modal-form__prices">
+							<ul class="modal-form__price-list">
+								<li class="modal-form__price-item" placingNode >
+									<span class="modal-form__pretext">&nbsp;Размещение:&nbsp;</span>
+									<span class="modal-form__value" periodPrice>11 200 рублей</span>
+								</li>
+								<li class="modal-form__price-item" productionNode >
+									<span class="modal-form__pretext">&nbsp;Производство:&nbsp;</span>
+									<span class="modal-form__value">от 3 000 рублей / ролик</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</section>
+
+				<footer class="modal-form__footer">
+					<button
+						id="modalButton"
+						class="modal-form__button"
+						type="submit"
+						>Отправить заявку</button>
+						<span
+							id="footerAlert"
+							class="modal-form__alert _is-show"
+							>Заявка отправлена!</span>
+				</footer>
+
+			</form>
+
+		</div>
 
 	</div>
-
-</div>
