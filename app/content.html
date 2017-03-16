@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Тайга - 70</title>
+	<meta name="author" content="CHANGE-ME">
+	<meta name="description" content="CHANGE-ME">
+
+	<!-- Mobile Stuff -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="msapplication-tap-highlight" content="no">
+
+	<!-- Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="CHANGE-ME">
+	<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon.png">
+
+	<!-- Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="CHANGE-ME">
+	<link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+	<!-- Windows 8 -->
+	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+
+	<meta name="theme-color" content="#000000">
+
+	<!--build:css css/base.min.css-->
+	<link rel="stylesheet" href="./bower_components/normalize-css/normalize.css">
+	<link rel="stylesheet" href="./bower_components/flickity/dist/flickity.min.css">
+	<link rel="stylesheet" href="./bower_components/sweetalert2/dist/sweetalert2.min.css">
+	<link rel="stylesheet" href="./bower_components/ion.rangeSlider/css/ion.rangeSlider.css">
+	<link rel="stylesheet" href="./bower_components/jquery-labelauty/source/jquery-labelauty.css">
+	<link rel="stylesheet" href="./css/base.css">
+	<!--endbuild-->
+
+	<!--build:css css/content.min.css-->
+	<link rel="stylesheet" href="./css/content.css">
+	<!--endbuild-->
+</head>
+
+<body>
+
+	<div id="wrapper" class="wrapper">
+
+		<header id="Header" class="header">
+			<div class="container_flex-row">
+
+				<div class="header__logo">
+					<svg id="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 761.6 230.1" xml:space="preserve">
+						<g class="st0"><path class="st1" d="M351.3,111.6v56.6h-19v-56.6h-19.7V93.7h58.5v17.8H351.3z"/><path class="st1" d="M432.9,168.2h-20.2l-4.8-14.9h-19.8l-4.6,14.9h-20.2l25.9-74.3h17.1L432.9,168.2z M403.4,136.6l-5.1-21.7h-0.5l-5.5,21.7H403.4z"/><path class="st1" d="M456.6,168.2h-18.8V93.8h18.8V168.2z"/><path class="st1" d="M506.1,115.9c-4.1-10-20.7-7.7-20.7,2.1v25.5c0,11.7,21.7,11.5,21.7,0v-2.7h-11.9V125h29.9v18.5c0,17.1-14.3,25.7-29.2,25.7c-14.7,0-29.4-8.6-29.4-25.7V118c0-16.8,14.7-25.2,29.4-25.2c9.7,0,20.7,4,25.8,15.9L506.1,115.9z"	/><path class="st1" d="M596.9,168.2h-20.2l-4.8-14.9h-19.8l-4.6,14.9h-20.2l25.9-74.3h17.1L596.9,168.2z M567.4,136.6l-5.1-21.7h-0.5l-5.5,21.7H567.4z"	/><path class="st1" d="M633.6,146.6h-32.8v-17.8h32.8V146.6z"/><path class="st1" d="M686.2,93.8l5,10.1l-28.7,64.3h-20.2l24.1-56.5h-28.3V93.8H686.2z"/><path class="st1" d="M695.8,146.4v-30.8c0-15.9,14.3-22.9,26.9-22.9c12.7,0,26.9,7,26.9,22.9v30.8c0,15.8-14.2,22.8-26.9,22.8C710.1,169.2,695.8,162.2,695.8,146.4z M713.7,116.2v30.4c0,4.3,4.5,6.6,9,6.6c4.3,0,9-2.3,9-6.6v-30.4c0-4.5-4.8-6.9-9-6.9C718.3,109.3,713.7,111.8,713.7,116.2z"/></g><g class="st0"><path class="st2" d="M338.9,213.8h-0.5v-13.5h0.5v6.5h8.5v-6.5h0.5v13.5h-0.5v-6.5h-8.5V213.8z"/><path class="st2" d="M365.5,213.8H365l5-13.5h0.8l5,13.5h-0.5l-1.8-4.8h-6.1L365.5,213.8z M370.3,200.8l-2.8,7.7h5.8L370.3,200.8L370.3,200.8z"/><path class="st2" d="M392.8,213.8v-13.5h4.8c2.7,0,4.1,2.1,4.1,4.1c0,2-1.4,4-4.1,4h-4.3v5.4H392.8z M397.6,208c2.5,0,3.6-1.8,3.6-3.6c0-1.8-1.2-3.6-3.6-3.6h-4.3v7.2H397.6z"/><path class="st2" d="M420.2,213.8l1.9-4.1l-4.6-9.3h0.6l3.3,6.8l1,2h0l0.8-1.8l3.1-6.9h0.6l-6.1,13.5H420.2z"/><path class="st2" d="M457.9,213.8h-0.6l-5.2-6.7l-1.5,1.7v5H450v-5l-1.5-1.7l-5.2,6.7h-0.6l5.5-7.1l-5.8-6.4l0.7,0l6.9,7.8v-7.8h0.5v7.8l6.9-7.8l0.7,0l-5.8,6.4L457.9,213.8z"/><path class="st2" d="M475.7,213.8h-0.5v-13.5h0.5v6.5h8.5v-6.5h0.5v13.5h-0.5v-6.5h-8.5V213.8z"/><path class="st2" d="M511,213.8l0-5.9h-3.2l-5.1,5.9h-0.6l5.1-5.9c-2.5,0-4.7-0.9-4.7-3.6c0-2.1,1.3-4,4.4-4h4.5v13.5H511zM506.8,200.8c-2.8,0-3.8,1.7-3.8,3.5c0,2.2,2.3,3.1,4,3.1h4l0-6.7H506.8z"/><path class="st2" d="M537.8,213.8l0-5.9h-3.2l-5.1,5.9h-0.6l5.1-5.9c-2.5,0-4.7-0.9-4.7-3.6c0-2.1,1.3-4,4.4-4h4.5v13.5H537.8zM533.6,200.8c-2.8,0-3.8,1.7-3.8,3.5c0,2.2,2.3,3.1,4,3.1h4l0-6.7H533.6z"/><path class="st2" d="M576.4,213.8v-13.5h4.8c2.7,0,4.1,2.1,4.1,4.1c0,2-1.4,4-4.1,4h-4.3v5.4H576.4z M581.2,208c2.5,0,3.6-1.8,3.6-3.6c0-1.8-1.2-3.6-3.6-3.6h-4.3v7.2H581.2z"/><path class="st2" d="M603.3,206.8h7v0.5h-7v6h7.5v0.5h-8v-13.5h8v0.5h-7.5V206.8z"/><path class="st2" d="M629.1,208.5l8-8.2h0.6l-6.2,6.5l6.2,7h-0.6l-6-6.6l-2,2v4.6h-0.5v-13.5h0.5V208.5z"/><path class="st2" d="M663.3,213.8l-3.7-10.5l-1-2.7h-0.1l-1,2.8l-3.7,10.4h-0.5l4.8-13.5h0.9l4.8,13.5H663.3z"/><path class="st2" d="M680.1,213.8h-0.5l5-13.5h0.8l5,13.5h-0.5L688,209h-6.1L680.1,213.8z M684.9,200.8l-2.8,7.7h5.8L684.9,200.8L684.9,200.8z"/><path class="st2" d="M708,200.8l-0.2,0v13h-0.5v-13.5h1l4.8,10.9l4.8-10.9h1v13.5h-0.5v-13.1h-0.2l-4.8,11h-0.6L708,200.8z"/><path class="st2" d="M736.6,213.8h-0.5l5-13.5h0.8l5,13.5h-0.5l-1.8-4.8h-6.1L736.6,213.8z M741.4,200.8l-2.8,7.7h5.8L741.4,200.8L741.4,200.8z"/></g><g class="st3"><path class="st1" d="M253.5,54.9H142.9L193,0l-54.6,50.1l-22.3-32.4l17.1,37.2H19.7C8.8,54.9,0,63.8,0,74.6v135.8c0,10.9,8.8,19.7,19.7,19.7h233.8c10.9,0,19.7-8.8,19.7-19.7V74.6C273.2,63.8,264.4,54.9,253.5,54.9z M265.9,210.4c0,6.8-5.6,12.4-12.4,12.4H19.7c-6.8,0-12.4-5.6-12.4-12.4V74.6c0-6.8,5.6-12.4,12.4-12.4h233.8c6.8,0,12.4,5.6,12.4,12.4V210.4z"/></g><polygon class="st4" points="178.6,109.2 140.3,189.6 216.9,189.6"/><polygon class="st4" points="89.6,109.2 51.3,189.6 127.9,189.6"/><g class="st3"><polygon class="st1" points="133.5,79.7 81.2,189.6 185.9,189.6"/></g>
+					</svg>
+				</div>
+
+				<a id="trigger" href="#" class="header-menu-trigger">
+					<svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<path class="menuIcon" d="M0,426.67H512V369.78H0ZM0,284.44H512V227.56H0ZM0,85.33v56.89H512V85.33Z" />
+					</svg>
+				</a>
+				<ul id="headerMenu" class="header__menu _mobile">
+					<li class="header__menu-item _mobile">
+						<a href="/" class="header__menu-link _active">Главная</a>
+					</li>
+					<li class="header__menu-item _mobile">
+						<a href="/news.html" class="header__menu-link">Новости и акции</a>
+					</li>
+					<li class="header__menu-item _mobile">
+						<a href="/advertising.html" class="header__menu-link">Услуги</a>
+					</li>
+					<li class="header__menu-item _mobile">
+						<a href="/about.html" class="header__menu-link">О компании</a>
+					</li>
+				</ul>
+
+				<label for="search" class="header-search">
+					<input id="search" class="header-search__iinput" type="text" placeholder="Найти фото, видео или пользователя...">
+					<button type="button" class="header-search__button">
+						<svg id="searchIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+							<path class="searchIcon" d="M384,192C384,86,298,0,192,0C86,0,0,86,0,192s86,192,192,192C298,384,384,298,384,192z M192,336c-79.4,0-144-64.6-144-144S112.6,48,192,48c79.4,0,144,64.6,144,144S271.4,336,192,336z" /><path class="searchIcon" d="M497.9,430.1L380.5,312.6c-17.5,27.2-40.7,50.4-67.9,67.9l117.5,117.5c18.8,18.7,49.2,18.7,67.9,0C516.7,479.2,516.7,448.8,497.9,430.1z" />
+						</svg>
+					</button>
+				</label>
+
+				<div class="header-profile">
+					<a href="/profile.html" class="header-profile__link">
+						<span class="header-profile__name">Jonh Doe</span>
+						<img class="header-profile__avatar" src="https://avatars.yandex.net/get-yapic/30955/242867855-29703849/islands-retina-middle" alt="">
+					</a>
+					<a href="#" class="header-profile__dots">&#9679; &#9679; &#9679;</a>
+				</div>
+
+			</div>
+		</header>
+
+		<main id="main" class="main">
+
+			<section id="Intro" class="intro"></section>
+
+			<section id="Title" class="title">
+				<div class="container_flex-row">
+					<svg id="videoIconSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 358.4" xml:space="preserve">
+						<path class="videoIconSvg" d="M512,76.6C512,34.3,477.7,0,435.5,0h-359C34.3,0,0,34.3,0,76.6v205.3c0,42.3,34.3,76.6,76.5,76.6h359c42.3,0,76.5-34.3,76.5-76.6V76.6z M204.8,265.8V73L351,169.4L204.8,265.8z" />
+					</svg>
+					<h1 class="title__title">Галерея</h1>
+				</div>
+			</section>
+
+			<section id="Navigate" class="navigate">
+				<div class="container">
+					<ul class="navigate-list">
+						<li class="navigate-list__item">
+							<a href="#" class="navigate-list__anchor _active">Назад</a>
+						</li>
+						<li class="navigate-list__item">
+							<a href="#" class="navigate-list__anchor">Очень длинное название контента, отражающее всю его суть...</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="Gallery" class="gallery">
+			
+				<div class="player__container">
+					<div class="player-item">
+						<div class="player-item__content">
+							<img src="http://placehold.it/850x500">
+							<span class="player-item__content-control">
+								<svg id="playIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 162.6 162.6" xml:space="preserve">
+									<circle class="playIcon0" cx="81.3" cy="81.3" r="77.6" /><path class="playIcon1" d="M69.7,65.4l26.8,15.9L69.7,97.2V65.4 M65.8,54.1c-2.1,0-3.9,1.7-3.9,3.9v46.6c0,2.1,1.7,3.9,3.9,3.9l41-24.2c1-0.6,1.7-1.7,1.7-2.9c0-1.2-0.6-2.3-1.7-2.9L65.8,54.1L65.8,54.1z" />
+								</svg>
+							</span>
+						</div>
+						<div class="player-item__controls">
+							<button class="player-item__playback-button">
+								<svg id="playbackIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 162.6 162.6" xml:space="preserve">
+									<circle class="playbackIcon0" cx="81.3" cy="81.3" r="77.6" /><path class="playbackIcon1" d="M69.7,65.4l26.8,15.9L69.7,97.2V65.4 M65.8,54.1c-2.1,0-3.9,1.7-3.9,3.9v46.6c0,2.1,1.7,3.9,3.9,3.9l41-24.2c1-0.6,1.7-1.7,1.7-2.9c0-1.2-0.6-2.3-1.7-2.9L65.8,54.1L65.8,54.1z" />
+								</svg>
+							</button>
+							<div class="player-item__playback-timer">
+								<span class="player-item__playback-time">22:32</span>
+								<span class="player-item__playback-line"></span>
+								<span class="player-item__playback-time">26:40</span>
+							</div>
+							<div class="player-item__volume">
+								<span class="player-item__volume-icon">
+									<svg id="volumeIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 108.2 94.7" xml:space="preserve">
+										<path class="volumeIcon" d="M62.6,0c-0.8,0-1.5,0.2-2.3,0.7l-27.5,19c-0.6,0.4-1.2,0.6-1.9,0.6H6.8c-3.7,0-6.8,3-6.8,6.8v40.6c0,3.7,3,6.8,6.8,6.8h24.1c0.7,0,1.4,0.2,1.9,0.6l27.5,19c0.7,0.5,1.5,0.7,2.3,0.7c2.7,0,5.1-2.7,5.1-6.4V6.4C67.6,2.7,65.2,0,62.6,0z M54.1,73.3l-14.5-10l-1.7-1.2c-1.1-0.8-2.5-1.2-3.8-1.2H16.9c-1.9,0-3.4-1.5-3.4-3.4V37.2c0-1.9,1.5-3.4,3.4-3.4h17.2c1.4,0,2.7-0.4,3.8-1.2l1.7-1.2l14.5-10V73.3z M108.2,46c-0.6-11.8-10.3-20.2-17-24.7c-3.2-2.1-7.4-0.8-9,2.8l-0.3,0.6c-1.3,2.9-0.3,6.3,2.3,8.1c4.8,3.2,10.8,8.4,11,14c0.2,4.6-3.8,9.9-11.3,15.3c-2.7,1.9-3.6,5.7-1.9,8.6l0.3,0.5c1.8,3.2,5.9,4.2,8.8,2.1C102.9,64.8,108.7,55.7,108.2,46z" />
+									</svg>
+								</span>
+								<span class="player-item__volume-line"></span>
+							</div>
+							<button class="player-item__fullscreen-button">
+								<svg id="fullscreenIconSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 86.2 86.2" xml:space="preserve">
+									<path class="fullscreenIconSvg" d="M26.9,0H5.4C2.4,0,0,2.4,0,5.4v21.6c0,3,2.4,5.4,5.4,5.4c3,0,5.4-2.4,5.4-5.4V10.8h16.2c3,0,5.4-2.4,5.4-5.4C32.3,2.4,29.9,0,26.9,0z M80.8,0H59.3c-3,0-5.4,2.4-5.4,5.4c0,3,2.4,5.4,5.4,5.4h16.2v16.2c0,3,2.4,5.4,5.4,5.4c3,0,5.4-2.4,5.4-5.4V5.4C86.2,2.4,83.8,0,80.8,0z M80.8,53.9c-3,0-5.4,2.4-5.4,5.4v16.2H59.3c-3,0-5.4,2.4-5.4,5.4c0,3,2.4,5.4,5.4,5.4h21.6c3,0,5.4-2.4,5.4-5.4V59.3C86.2,56.3,83.8,53.9,80.8,53.9z M26.9,75.4H10.8V59.3c0-3-2.4-5.4-5.4-5.4c-3,0-5.4,2.4-5.4,5.4v21.6c0,3,2.4,5.4,5.4,5.4h21.6c3,0,5.4-2.4,5.4-5.4C32.3,77.8,29.9,75.4,26.9,75.4z" />
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="player-side">
+						<div class="player-side__profile">
+							<img class="player-side__profile-avatar"
+									src="https://avatars.yandex.net/get-yapic/30955/242867855-29703849/islands-retina-middle"
+									alt="">
+							<div class="player-side__profile-info">
+								<h6 class="player-side__profile-name">
+									Алексей Забайкальский
+								</h6>
+								<p class="player-side__profile-time">
+									22 февраля в 16:20
+								</p>
+							</div>
+						</div>
+						<div class="player-side__information">
+							<label for="like" class="player-side__information-b-like">
+								<input
+									id="like"
+									class="player-side__information-check up"
+									name="likedislike_vote"
+									type="submit"
+									value="+1"
+									title="Vote up">
+								<svg
+									id="likeIconSvg"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+									viewBox="0 0 512 476"
+									xml:space="preserve">
+									<path
+										class="like"
+										d="M511.2,142C503.7,59.7,445.5,0,372.6,0c-48.5,0-93,26.1-118,68C229.8,25.6,187.2,0,139.4,0C66.6,0,8.3,59.7,0.9,141.9c-0.6,3.6-3,22.8,4.4,53.9c10.6,45,35.1,85.9,70.9,118.3L254.5,476l181.4-161.9c35.8-32.4,60.3-73.3,70.9-118.3C514.2,164.7,511.7,145.6,511.2,142z"/>
+								</svg>
+								<span class="player-side__information-like-text">
+									Мне нравится&nbsp;
+								</span>
+								<span class="player-side__information-like-counter">
+									38
+								</span>
+							</label>
+							<h2 class="player-side__information-title">
+								Очень длинное название контента, отражающее всю его суть...
+							</h2>
+							<p class="player-side__information-additional">
+								Описание для этого изображения и все такое... Небольшой текст о данной новости, дабы рассказать, о чем пойдет речь.Ну и просто всякое всякое.
+							</p>
+						</div>
+						<div class="player-side__tags">
+							<ul class="player-side__tags-list">
+								<li class="player-side__tags-item">
+									<a href="#" class="player-side__tags-link">
+										Тэг 1 ,
+									</a>
+								</li>
+								<li class="player-side__tags-item">
+									<a href="#" class="player-side__tags-link">
+										Тэг 2 ,
+									</a>
+								</li>
+								<li class="player-side__tags-item">
+									<a href="#" class="player-side__tags-link">
+										Тэг 3 ,
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="player-bottom">
+						<div class="comments">
+
+						<h3 class="comments__title">
+							Комментарии (<span id="comment-total">2</span>)
+						</h3>
+
+						<div id="comments-wrapper">
+							<ol class="comment-list" id="comments">
+								<li class="comment-list__item">
+									<img src="https://avatars.yandex.net/get-yapic/30955/242867855-29703849/islands-retina-middle"
+										alt=""
+										class="comment-list__item-avatar"
+										>
+									<div class="comment-list__item-container">
+										<h6 class="comment-list__item-name">
+											Алексей Забайкальский
+										</h6>
+										<p class="comment-list__item-message">
+											Разнообразный и богатый опыт реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации систем массового участия. С другой стороны реализация намеченных плановых заданий в значительной степени обуславливает создание дальнейших направлений развития. Не следует, однако забывать, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Разнообразный и богатый опыт консультация с широким активом требуют определения и уточнения систем массового участия. Равным образом дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Товарищи! новая модель организационной деятельности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. 
+										</p>
+										<p class="comment-list__item-date">
+											22 февраля в 16:20
+										</p>
+									</div>
+								</li>
+							</ol>
+						</div>
+						
+						<div class="add-comment">
+							<form
+								id="comment-form"
+								action=""
+								method="post"
+								class="add-comment__form">
+						
+								<div class="add-comment__container">
+									<img src="https://avatars.yandex.net/get-yapic/30955/242867855-29703849/islands-retina-middle"
+										alt=""
+										class="add-comment__avatar"
+										/>
+									<label for="comment-editor" class="add-comment__label">
+										<textarea
+											name="text"
+											id="comment-editor"
+											rows="3"
+											class="add-comment__textarea"
+											placeholder="Написать комментарий"
+											></textarea>
+									</label>
+								</div>
+								
+								<div class="add-comment__container">
+									<input type="submit"
+										class="add-comment__submit"
+										value="Написать"
+										title="Ctrl + Enter"
+										/>
+									<span class="add-comment__submit-time">10 02 11</span>
+									<label for="captcha">
+										<span class="add-comment__captcha">Введите сумму 7 + 1</span>
+									<input
+										type="text"
+										name="captcha"
+										value=""
+										id="captcha"
+										class="add-comment__captcha-input"
+										/>
+									</label>
+									<span class="add-comment__captcha-error"></span>
+								</div>
+								
+							</formid>
+						</div>
+					</div>
+				</div>
+			
+			</section>
+
+		</main>
+
+		<footer id="Footer" class="footer">
+			<div class="container_flex-row">
+
+				<div class="footer__form-container">
+					<form class="footer-form">
+						<div class="container_flex-column">
+							<header class="footer-form__header">
+								<h3 class="footer-form__title">Задайте вопрос:</h3>
+							</header>
+							<section class="footer-form__body">
+								<div class="footer-form__row">
+									<input id="footerName" class="footer-form__input" type="text" name="name" placeholder="Имя" requaired />
+								</div>
+								<div class="footer-form__row">
+									<input id="footerMail" class="footer-form__input" type="email" name="mail" placeholder="E-mail" requaired />
+								</div>
+								<div class="footer-form__row">
+									<textarea id="footerMessage" class="footer-form__textarea" name="message" placeholder="Наберите сообщение..." requaired></textarea>
+								</div>
+								<div class="footer-form__row _flex">
+									<input class="footer-form__input _half" type="text" placeholder="Введите код..." name="vericode" />
+									<img class="footer-form__captcha" src="./assets/img/veriword.jpg" alt="Введите код" />
+								</div>
+								<!-- src="[+verimageurl+]" -->
+							</section>
+							<footer class="footer-form__footer">
+								<button id="footerButton" class="footer-form__button" type="button">Отправить</button>
+								<span id="footerAlert" class="footer-form__alert _is-show">Ваше сообщение отправлено!</span>
+							</footer>
+						</div>
+					</form>
+				</div>
+
+				<div class="footer__content">
+					<ul class="footer-list">
+						<span class="footer-list__headline">ПОДРОБНЕЕ</span>
+						<li class="footer-list__item">
+							<a href="" class="footer-list__content">Новости</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="" class="footer-list__content">Акции</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="" class="footer-list__content">Клиенты</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="" class="footer-list__content">О компании</a>
+						</li>
+					</ul>
+
+					<ul class="footer-list">
+						<span class="footer-list__headline">УСЛУГИ</span>
+						<li class="footer-list__item">
+							<a href="" class="footer-list__content">Размещение рекламы</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="" class="footer-list__content">Создание роликов</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="" class="footer-list__content">Порядок работы</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="" class="footer-list__content">Наша политика</a>
+						</li>
+					</ul>
+
+					<ul class="footer-list">
+						<span class="footer-list__headline">КОНТАКТЫ</span>
+						<li class="footer-list__item">
+							<span class="footer-list__type">E-mail:</span>
+							<span class="footer-list__content">manager@taiga70.ru</span>
+						</li>
+						<li class="footer-list__item">
+							<span class="footer-list__type">Телефон:</span>
+							<span class="footer-list__content">+7(999) 999-99-99</span>
+						</li>
+						<li class="footer-list__item">
+							<span class="footer-list__type">Адрес:</span>
+							<span class="footer-list__content">г. Томск, ул. Пушкина, д. Колотушкина</span>
+						</li>
+						<li class="footer-list__item">
+							<ul class="footer-list _social">
+								<li class="footer-list__social-item">
+									<a href="//vk.com" class="footer-list__social-icon">
+										<svg id="vkIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 511.98">
+											<circle class="vkIcon-1" cx="256" cy="255.99" r="255.99" />
+											<path class="vkIcon-2" d="M246.33,368.27h20.09s6.07-.67,9.17-4c2.85-3.07,2.76-8.83,2.76-8.83s-.39-27,12.12-30.93c12.33-3.91,28.17,26.06,45,37.58,12.7,8.72,22.34,6.81,22.34,6.81l44.89-.63s23.48-1.45,12.35-19.91c-.91-1.51-6.48-13.66-33.38-38.62-28.15-26.12-24.38-21.9,9.53-67.09,20.65-27.52,28.9-44.32,26.33-51.52-2.46-6.85-17.65-5-17.65-5l-50.54.31a11.47,11.47,0,0,0-6.53,1.15c-2.72,1.63-4.46,5.43-4.46,5.43s-8,21.3-18.67,39.41c-22.51,38.22-31.5,40.23-35.18,37.86C275.9,264.72,278,248,278,236.17c0-37,5.62-52.48-10.94-56.48-5.49-1.33-9.54-2.2-23.59-2.35-18-.19-33.3.05-41.94,4.29-5.75,2.82-10.19,9.09-7.48,9.45,3.34.45,10.91,2,14.92,7.5,5.18,7,5,22.87,5,22.87s3,43.6-6.95,49c-6.81,3.71-16.16-3.87-36.22-38.54a322.31,322.31,0,0,1-18-37.39,15,15,0,0,0-4.17-5.63,20.94,20.94,0,0,0-7.77-3.13l-48,.31s-7.21.2-9.86,3.34c-2.35,2.79-.19,8.56-.19,8.56s37.6,88,80.18,132.3c39,40.65,83.37,38,83.37,38Z" />
+										</svg>
+									</a>
+								</li>
+								<li class="footer-list__social-item">
+									<a href="//facebook.com" class="footer-list__social-icon">
+										<svg id="fbIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+											<circle class="fbIcon" cx="256" cy="256" r="256" />
+											<path class="fbIcon1" d="M320.4,266h-45.7v167.4h-69.2V266h-32.9v-58.8h32.9v-38.1c0-27.2,12.9-69.8,69.8-69.8l51.3,0.2v57.1h-37.2c-6.1,0-14.7,3-14.7,16v34.6h51.7L320.4,266z" />
+										</svg>
+									</a>
+								</li>
+								<li class="footer-list__social-item">
+									<a href="//ok.ru" class="footer-list__social-icon">
+										<svg id="okIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+											<path class="okIcon" d="M256.24,212.17a44.13,44.13,0,1,0-44.4-43.69A43.82,43.82,0,0,0,256.24,212.17Z" />
+											<path class="okIcon" d="M256,0C114.61,0,0,114.62,0,256S114.61,512,256,512,512,397.38,512,256,397.39,0,256,0Zm.37,77.85c49.86.14,89.89,40.92,89.63,91.34-.25,49.25-40.93,89.17-90.71,89-49.27-.17-89.68-41-89.39-90.37A90.31,90.31,0,0,1,256.37,77.85Zm101,215.77c-11,11.32-24.3,19.51-39,25.23-13.93,5.4-29.2,8.12-44.32,9.93,2.29,2.48,3.36,3.7,4.79,5.13,20.51,20.62,41.12,41.14,61.57,61.82,7,7.05,8.42,15.79,4.58,24-4.19,9-13.58,14.84-22.79,14.21-5.83-.4-10.39-3.3-14.43-7.37-15.48-15.58-31.26-30.88-46.42-46.75-4.43-4.62-6.54-3.74-10.44.27-15.57,16-31.4,31.82-47.32,47.52-7.15,7.05-15.66,8.33-24,4.3-8.82-4.26-14.42-13.27-14-22.32.3-6.11,3.31-10.79,7.51-15q30.46-30.4,60.8-60.91c1.35-1.35,2.59-2.78,4.55-4.87-27.62-2.89-52.53-9.68-73.85-26.36a97.63,97.63,0,0,1-7.79-6.4c-9.34-9-10.28-19.23-2.9-29.8,6.32-9.05,16.92-11.47,27.95-6.27a43.3,43.3,0,0,1,6.12,3.61c39.73,27.3,94.32,28.05,134.21,1.22A36.4,36.4,0,0,1,335.29,258c9.51-2.45,18.4,1.05,23.5,9.38C364.62,276.95,364.55,286.23,357.36,293.62Z" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+	<script>
+		var yaBrowserUpdater = new ya.browserUpdater.init({
+			"lang": "ru",
+			"browsers": {
+				"yabrowser": "15.12",
+				"chrome": "54",
+				"ie": "12",
+				"opera": "41",
+				"safari": "9",
+				"fx": "49",
+				"iron": "35",
+				"flock": "Infinity",
+				"palemoon": "25",
+				"camino": "Infinity",
+				"maxthon": "4.5",
+				"seamonkey": "2.3"
+			},
+			"theme": "red"
+		});
+	</script>
+	
+	<script src="./js/base.min.js" charset="utf-8"></script>
+
+	<!--build:js js/content.min.js -->
+	<script src="./js/content.js" charset="utf-8"></script>
+	<!-- endbuild -->
+</body>
+
+</html>

@@ -5,53 +5,7 @@
             "sass.enabled": false,
             "linting.collapsed": true,
             "debug.showErrorsInStatusBar": true,
-            "bracketsEditorBookmarks.bookmarks": {
-                "C:/Users/Alex_.ANTONIO-PC/Google Диск/Projects/Git_Projects/avon/src/css/main.css.map": [],
-                "C:/Users/Alex_.ANTONIO-PC/Google Диск/Projects/Git_Projects/Новая папка/gulpfile.js": [],
-                "C:/Users/Alex_.ANTONIO-PC/Google Диск/Projects/Git_Projects/avon/src/js/main.js": [
-                    16,
-                    73,
-                    113,
-                    117
-                ],
-                "C:/Users/Alex_.ANTONIO-PC/Google Диск/Projects/Git_Projects/Komfort124/src/scss/partials/_mixins.scss": [],
-                "C:/Users/Alex_.ANTONIO-PC/Google Диск/Projects/Git_Projects/Komfort124/src/scss/base.scss": [],
-                "C:/Users/Alex_.ANTONIO-PC/Google Диск/Projects/Git_Projects/Komfort124/src/scss/partials/_variables.scss": [],
-                "C:/Users/Alex_.ANTONIO-PC/Google Диск/Projects/Git_Projects/Komfort124/index.html": [],
-                "C:/Users/Alex_.ANTONIO-PC/AppData/Roaming/Brackets/defaultPreferences.json": [],
-                "C:/Users/Alex_.ANTONIO-PC/AppData/Roaming/Brackets/brackets.json": [],
-                "C:/Users/Alex_.ANTONIO-PC/Google Диск/Projects/Git_Projects/Komfort124/root/base/js/jquery.custom-scroll.min.js": [],
-                "C:/Users/Alex_.ANTONIO-PC/Google Диск/Projects/Git_Projects/Komfort124/src/scss/boilers/kentatsu.scss": [],
-                "C:/Program Files (x86)/Brackets/samples/ru/Getting Started/index.html": [],
-                "C:/Users/Алексей/Google Диск/Projects/Git_Projects/alpha/index.html": [],
-                "C:/Users/Алексей/Google Диск/Projects/Git_Projects/alpha/src/scss/partials/_mixins.scss": [],
-                "C:/Users/Алексей/GoogleDrive/Projects/Git_Projects/site-portfolio__2/gulpfile.js": [],
-                "C:/Users/Алексей/GoogleDrive/Projects/Git_Projects/site-portfolio__2/package.json": [],
-                "C:/Users/Алексей/GoogleDrive/Projects/Git_Projects/site-portfolio__2/gulpfile.min.js": [],
-                "C:/Users/Алексей/Desktop/jQuery-1/index.html": [],
-                "C:/Users/Алексей/Desktop/jQuery-1/css/main.css.map": [],
-                "C:/Users/Алексей/Desktop/jQuery-1/css/main.scss": [],
-                "C:/Users/Алексей/Desktop/jQuery-1/css/main.css": [],
-                "C:/Users/Алексей/GoogleDrive/Projects/Git_Projects/site-portfolio__2/app/index.html": [],
-                "C:/Users/Алексей/GoogleDrive/Projects/Git_Projects/site-portfolio/about.html": [],
-                "/_brackets_10328223/Без названия-1.html": [],
-                "C:/Users/Алексей/GoogleDrive/Projects/Git_Projects/avon/send.php": [],
-                "C:/Users/Алексей/Desktop/dev/Git_Projects/site-portfolio__2/gulpfile.js": [],
-                "C:/Users/Алексей/Desktop/dev/Git_Projects/site-portfolio__2/build/assets/icons/check.svg": [],
-                "C:/Users/Алексей/Desktop/dev/Git_Projects/site-portfolio__2/build/assets/icons/cheese.svg": [],
-                "C:/Users/Алексей/Desktop/dev/Git_Projects/project-template/README.md": [],
-                "C:/Users/Алексей/Desktop/dev/Git_Projects/project-template/package.json": [],
-                "C:/Users/Алексей/Desktop/dev/Git_Projects/project-template/gulpfile.js": [],
-                "C:/Users/Алексей/Desktop/dev/Git_Projects/project-template/.gitignore": [],
-                "C:/Users/Алексей/Desktop/dev/Git_Projects/project-template/app/scss/print.scss": [],
-                "C:/Users/Алексей/Desktop/dev/Git_Projects/project-template/app/scss/styles.scss": [],
-                "C:/Users/Алексей/Desktop/dev/Git_Projects/project-template/app/css/print.css": [],
-                "C:/Users/Алексей/Desktop/dev/Git_Projects/project-template/app/css/styles.css": []
-            },
-            "brackets-git.gitPath": "git",
-            "eqFTP.projectsPaths": [
-                "C:/Users/Alex_/Google Drive/Projects/Git_Projects/site-portfolio/"
-            ]
+            "noDistractions": true
         }
     }
 }
