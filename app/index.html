@@ -100,6 +100,14 @@
 					</li>
 					<li class="header__menu-item">
 						<a href="/advertising.html" class="header__menu-link">Услуги</a>
+						<ul class="header__menu-submenu">
+							<li class="header__menu-item">
+								<a href="/production.html" class="header__menu-link _submenu">Производство</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="/advertising.html" class="header__menu-link _submenu"> Размещение</a>
+							</li>
+						</ul>
 					</li>
 					<li class="header__menu-item">
 						<a href="/about.html" class="header__menu-link">О компании</a>
@@ -110,20 +118,21 @@
 					<svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 						<path class="menuIcon" d="M0,426.67H512V369.78H0ZM0,284.44H512V227.56H0ZM0,85.33v56.89H512V85.33Z" />
 					</svg>
-					Меню
 				</a>
 				<ul id="headerMenu" class="header__menu _mobile">
 					<li class="header__menu-item _mobile">
-						<a href="/" class="header__menu-link _active">Главная</a>
+						<a href="/" class="header__menu-link _mobile _active">Главная</a>
 					</li>
 					<li class="header__menu-item _mobile">
-						<a href="/news.html" class="header__menu-link">Новости и акции</a>
+						<a href="/news.html" class="header__menu-link _mobile">Новости и акции</a>
 					</li>
 					<li class="header__menu-item _mobile">
-						<a href="/advertising.html" class="header__menu-link">Услуги</a>
+						<a href="#" class="header__menu-link _mobile">Услуги</a>
+						<a href="/production.html" class="header__menu-link _mobile">&#9679; Производство</a>
+						<a href="/advertising.html" class="header__menu-link _mobile">&#9679; Размещение</a>
 					</li>
 					<li class="header__menu-item _mobile">
-						<a href="/about.html" class="header__menu-link">О компании</a>
+						<a href="/about.html" class="header__menu-link _mobile">О компании</a>
 					</li>
 				</ul>
 
@@ -765,7 +774,7 @@
 	<!--build:js js/base.min.js -->
 	<script src="./bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
 	<script src="./bower_components/flickity/dist/flickity.pkgd.min.js" charset="utf-8"></script>
-	<script src="./bower_components/sweetalert2/dist/sweetalert2.min.js" charset="utf-8"></script>
+	<!-- <script src="./bower_components/sweetalert2/dist/sweetalert2.min.js" charset="utf-8"></script> -->
 	<script src="./js/lib/ion.rangeSlider.min.js" charset="utf-8"></script>
 	<script src="./bower_components/jquery-labelauty/source/jquery-labelauty.js" charset="utf-8"></script>
 	<script src="./js/base.js" charset="utf-8"></script>

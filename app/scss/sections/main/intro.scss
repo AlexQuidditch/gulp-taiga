@@ -3,7 +3,7 @@
 @import '../../partials/_variables';
 
 .intro {
-	size: 100% calc(100vh - 100px);
+	size: 100% calc(90vh - 100px);
 	background: url('../assets/img/intro.jpg') no-repeat center center;
 	background-size: cover;
 	&__title {
@@ -14,7 +14,7 @@
 		color: $white;
 		@include MQ(Pp) {
 			width: auto;
-			font-size: 3rem;
+			font-size: 2.5rem;
 		}
 		@include MQ(Pl) {
 			width: auto;
