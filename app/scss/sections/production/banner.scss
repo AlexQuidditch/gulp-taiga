@@ -10,14 +10,12 @@
 	background-repeat: no-repeat;
 	background-position: bottom;
     &__headline {
-    	font-family: 'HelveticaNeueCyr-Light', Arial, sans-serif;
-        font-size: 42px;
-        font-weight: 300;
-        line-height: 2.38;
+    	font: 300 42px/2.38 'HelveticaNeueCyr-Light', Arial, sans-serif;
         text-align: center;
         color: $green;
 		letter-spacing: 1.5px;
 		@include MQ(Pp) {
+			font-size: 2rem;
 			line-height: 1.5;
 		}
     }

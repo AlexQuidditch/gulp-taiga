@@ -4,6 +4,10 @@
 
 .title {
 	height: 150px;
+	@include MQ(Pp) {
+		height: auto;
+		padding: 20px 0;
+	}
 	.container_flex-row {
 		position: relative;
 		justify-content: center;
@@ -11,11 +15,20 @@
 	}
 	&__title {
 		font: 400 42px 'HelveticaNeueCyr-Medium', Arial, sans-serif;
-		color: $black
+		color: $black;
+		@include MQ(Pp) {
+			margin-top: 1rem;
+			text-align: center;
+			font-size: 1.5rem;
+		}
 	}
 }
 
 #prodIconSvg {
 	position: absolute;
 	left: 0;
+	@include MQ(Pp) {
+		position: relative;
+		size: 100px;
+	}
 }

@@ -26,7 +26,11 @@
 		text-align: center;
 		margin-bottom: 95px;
 		font: 300 42px 'HelveticaNeueCyr-Light', Arial, sans-serif;
-		background-color: $white
+		background-color: $white;
+	    @include MQ(Pp) {
+			margin-bottom: 0;
+			font-size: 1.5rem;
+	    }
 	}
     &-slider-container {
         size: 100% auto;

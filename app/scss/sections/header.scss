@@ -150,6 +150,9 @@
 		font: 300 1rem 'HelveticaNeueCyr-Light', Arial, sans-serif;
 		text-decoration: none;
 		cursor: pointer;
+		@include MQ(Pp) {
+			width: 100%;
+		}
 		&:hover {
 			text-decoration: underline;
 		}
@@ -157,7 +160,7 @@
 			font: 300 1rem 'HelveticaNeueCyr-Light', Arial, sans-serif;
 			margin-left: 30px;
 			@include MQ(Pp) {
-				margin-left: 5px;
+				display: none;
 			}
 			@include MQ(Pl) {
 				margin-left: 5px;

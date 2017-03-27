@@ -4,30 +4,41 @@
 
 .feed {
 	padding: 65px 0 30px 0;
+	@include MQ(Pp) {
+		padding: 0;
+	}
 }
 
 .feed-item {
 	display: flex;
 	size: 100% 270px;
 	margin: 55px 0;
-	background-image:
-	    linear-gradient(135deg, $green, 10%, $white);
-	@include MDShadow-2;
+	@include MDShadow-1;
 	transition: box-shadow .3s ease-in-out;
 	&:hover {
-		@include MDShadow-3;
+		@include MDShadow-2;
+	}
+	@include MQ(Pp) {
+		flex-flow: column wrap;
+		height: auto;
 	}
 
 	&__hot-new {
 		position: absolute;
 		size: 70px;
 		transform: translate(-50%, -50%);
+		@include MQ(Pp) {
+			transform: translate(-10%, -10%);
+		}
 	}
 
 	&__image {
 		object-fit: cover;
 		min-width: 280px;
 		background-color: #202020;
+		@include MQ(Pp) {
+			min-width: initial
+		}
 	}
 
 	&__container {
@@ -46,9 +57,15 @@
 	}
 	&__headline-title {
 		font: 300 36px 'HelveticaNeueCyr-Light', Arial, sans-serif;
+		@include MQ(Pp) {
+			font-size: 1.5rem;
+		}
 	}
 	&__headline-date {
-		font-size: 17px
+		font-size: 17px;
+		@include MQ(Pp) {
+			font-size: 12px;
+		}
 	}
 	&__content {
 		padding: 15px 20px;

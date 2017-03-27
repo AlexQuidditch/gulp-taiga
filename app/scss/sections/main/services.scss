@@ -137,9 +137,6 @@
 #prodIconSvg,
 #screenIconSvg {
 	width: 100px;
-	@include MQ(Pp) {
-		width: 150px;
-	}
 }
 
 .prodIconSvg,

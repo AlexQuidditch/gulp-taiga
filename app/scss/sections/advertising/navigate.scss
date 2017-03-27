@@ -5,17 +5,28 @@
 .navigate {
 	height: 90px;
 	background-color: #e1e2e6;
+	@include MQ(Pp) {
+		height: auto;
+		padding: 10px 0;
+	}
 }
 
 .navigate-list {
 	display: flex;
 	justify-content: space-between;
 	height: 100%;
+	@include MQ(Pp) {
+		flex-flow: column wrap;
+		align-items: center;
+	}
 	&__item {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		height: 100%;
+		@include MQ(Pp) {
+			margin: 10px 0;
+		}
 	}
 	&__anchor {
 		width: 172px;
@@ -29,9 +40,6 @@
 			background-color .3s ease-in-out,
 			border-color .3s ease-in-out,
 			color .3s ease-in-out;
-			&:hover {
-				@include MDShadow-1;
-			}
 		&._active {
 			color: $white $blue;
 			border-color: $blue;

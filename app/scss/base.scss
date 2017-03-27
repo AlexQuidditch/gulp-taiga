@@ -73,6 +73,9 @@
 	align-items: center;
 	height: 100%;
 	margin-left: 60px;
+	@include MQ(Pp) {
+		margin-left: 30px;
+	}
 	&__link {
 		display: flex;
 		flex-flow: row wrap;
@@ -80,7 +83,11 @@
 		align-items: center;
 	}
 	&__name {
+		text-align: right;
 		font: 700 1rem 'HelveticaNeueCyr-Bold', Arial,sans-serif;
+		@include MQ(Pp) {
+			display: none;
+		}
 	}
 	&__avatar {
 		width: 50px;

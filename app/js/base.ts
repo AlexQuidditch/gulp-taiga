@@ -1,3 +1,5 @@
+declare const $: any;
+
 (function() {
     $('[data-roll]').on('click', function(e) {
         e.preventDefault();
@@ -138,42 +140,5 @@ document.addEventListener('DOMContentLoaded', () => {
 			type: 'error',
 			showCloseButton: true
 		};
-
-
-	document.getElementById('modalButton').addEventListener('click', modalSend() );
-
-	function modalSend(): any {
-
-		let modalName: string = $('#modalName').val();
-		let modalPhone: string = $('#modalPhone').val();
-		let modalMessage: string = $('#formMsg').val();
-
-		let modalCounter: string = $("#RangeSlider").prop("value");
-		let modalPeriod: string = $('[name=period]:checked').val();
-		let modalChoice: string = $('[name=choice]:checked').val();
-
-		swal(confirm),
-			$.ajax({
-				type: 'POST',
-				url: '../php/sendmail.php',
-				data: {
-					modalName,
-					modalPhone,
-					modalMessage,
-					modalCounter,
-					modalPeriod,
-					modalChoice
-				},
-				cache: false,
-				success: function(response) {
-					console.log(data);
-					if (response == 1) {
-						swal(success)
-					} else {
-						swal(error)
-					}
-				}
-			})
-    }
 
 });

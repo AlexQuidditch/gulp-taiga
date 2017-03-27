@@ -48,6 +48,7 @@
 		margin-top: 50px;
 		@include MQ(Pp) {
 			flex-flow: column wrap;
+			align-items: center;
 			margin-top: 25px;
 		}
 	}
