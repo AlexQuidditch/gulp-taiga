@@ -3,7 +3,11 @@
 @import '../../partials/_variables';
 
 .intro {
-	size: 100 200px;
+	size: 100% 200px;
 	background: url('../assets/img/intro.jpg') no-repeat center center;
 	background-size: cover;
+	&__title {
+		font-size: 2.5rem;
+		text-align: center;
+	}
 }

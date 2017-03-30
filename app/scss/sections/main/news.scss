@@ -6,7 +6,9 @@
 	position: absolute;
 	bottom: -92px;
 	width: 100%;
-
+	@include MQ(Pp) {
+		bottom: -270px;
+	}
 	&__slider {
 		size: 950px 250px;
 		@include MQ(Pp) {
@@ -80,40 +82,40 @@
 .news-item {
 	display: flex;
 	width: 450px;
+	@include MQ(Pp) {
+		width: 100%;
+	}
 	min-height: 200px;
 	margin: 28px 10px;
 	background-color: $white;
 	@include MDShadow-1;
-
 	&__hot-new {
 		position: absolute;
 		size: 50px;
 		transform: translate(-50%, -50%);
 	}
-
 	&__image {
 		min-height: 200px;
 		background-color: #202020;
+		@include MQ(Pp) {
+			display: none;
+		}
 	}
-
 	&__container {
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: space-between;
 		align-content: center;
 	}
-
 	&__headline {
 		padding: 25px 20px 0;
 		font-size: 20px;
 		line-height: 1.5;
 	}
-
 	&__content {
 		padding: 15px 20px;
 		font: 300 12px/1.33 'HelveticaNeueCyr-Light', Arial, sans-serif;
 	}
-
 	&__link {
 		padding: 17px 0;
 		text-align: center;
@@ -136,8 +138,4 @@
 	&._back {
 		transform: rotate(180deg);
 	}
-}
-
-#hotIconSvg {
-	size: 69px
 }

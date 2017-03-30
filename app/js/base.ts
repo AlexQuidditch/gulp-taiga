@@ -13,10 +13,7 @@ declare const $: any;
     })
 })();
 
-'use strict'
-
-document.addEventListener('DOMContentLoaded', () => {
-
+$(document).ready(function() {
 	const buttonUp = $('#buttonUp');
     //	Button Up
     $('body').scroll(function () {
@@ -32,6 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 750);
         return false
     })
+});
+
+'use strict'
+
+document.addEventListener('DOMContentLoaded', () => {
+
 
 	$("#RangeSlider").ionRangeSlider({
 		type: "single",
@@ -49,10 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Header Menu trigger
 	document.getElementById('trigger').addEventListener('click', () => {
 		document.getElementById('headerMenu').classList.toggle('_opened')
-	});
-
-	document.getElementById('contacts-btn').addEventListener('click', () => {
-		console.log(this)
 	});
 
 	// Form Logic
@@ -132,14 +131,45 @@ document.addEventListener('DOMContentLoaded', () => {
 		};
 	};
 
-	document.getElementById('footerButton').addEventListener('click', (e) => {
+	const modalOffer: any[] = [document.getElementById('overlay'), document.getElementById('modal')];
+	const modalContacts: any[] = [document.getElementById('overlay'), document.getElementById('modal-2')];
+
+	function modalClose() {
+		modalOffer.forEach( (item: any, i: number, arr: any[] ) => {
+		    item.classList.remove('_opened')
+		});
+		modalContacts.forEach( (item: any, i: number, arr: any[] ) => {
+		    item.classList.remove('_opened')
+		})
+	};
+
+	document.getElementById('contacts-btn').addEventListener('click', (e) => {
 		e.preventDefault();
-		document.getElementById('overlay').classList.toggle('_opened')
+		modalContacts.forEach( (item: any, i: number, arr: any[] ) => {
+		    item.classList.toggle('_opened')
+		})
 	});
 
-	document.getElementById('modalClose').addEventListener('click', (e) => {
+	document.getElementById('footerButton').addEventListener('click', (e) => {
 		e.preventDefault();
-		document.getElementById('overlay').classList.remove('_opened')
+		modalOffer.forEach( (item: any, i: number, arr: any[] ) => {
+		    item.classList.toggle('_opened')
+		})
+	});
+
+	document.getElementById('modalClose1').addEventListener('click', (e) => {
+		e.preventDefault();
+		modalClose()
+	});
+
+	document.getElementById('modalClose2').addEventListener('click', (e) => {
+		e.preventDefault();
+		modalClose()
+	});
+
+	document.getElementById('modalClose3').addEventListener('click', (e) => {
+		e.preventDefault();
+		modalClose()
 	});
 
 });

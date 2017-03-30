@@ -1,24 +1,30 @@
 @import '../partials/_layout';
 @import '../partials/_mixins';
 @import '../partials/_variables';
+
 .overlay {
-	opacity: 0;
-	visibility: hidden;
 	z-index: 1000;
 	position: fixed;
 	top: 0;
 	left: 0;
 	size: 100% 100vh;
 	background-color: rgba($black, .5);
+}
+
+.overlay,
+.modal {
+	visibility: hidden;
+	opacity: 0;
 	transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
 	&._opened {
-		opacity: 1;
 		visibility: visible;
+		opacity: 1;
 	}
 }
 
 .modal {
-	position: relative;
+	position: absolute;
+	@include center(xy);
 	size: 100%;
 	&__headline {
 		position: relative;
@@ -27,6 +33,9 @@
 		font-size: 26px;
 		text-align: center;
 		color: $black;
+		&._contacts {
+			margin-bottom: 0;
+		}
 	}
 	&__close {
 		position: absolute;
@@ -38,7 +47,7 @@
 		cursor: pointer;
 		border: solid 1px #19191e;
 		border-radius: 50%;
-		box-shadow: 0 0 55px 0 rgba(0, 0, 0, 0.35);
+		box-shadow: 0 0 55px 0 rgba($black, 0.35);
 		transition: opacity .3s ease-in-out;
 		&:hover {
 			opacity: .4;
@@ -97,6 +106,10 @@
 	@include MQ(Pl) {
 		width: 95%;
 		padding: 40px 20px;
+	}
+	&._contacts {
+		width: 655px;
+		padding: 100px 120px 40px 120px;
 	}
 	&__header {
 		width: 100%;
@@ -260,6 +273,10 @@
 			flex-direction: column;
 			margin-top: 1rem;
 		}
+		&._contacts {
+			justify-content: center;
+			margin-top: 50px;
+		}
 	}
 	&__button {
 		padding: 12px 30px;
@@ -296,5 +313,31 @@
 			text-align: center;
 			margin-top: 1rem;
 		}
+	}
+}
+
+.modal-data {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 45px;
+	@include MQ(Pp) {
+		margin-top: 30px;
+	}
+	&__item {
+		font-size: 1rem;
+		font-weight: 300;
+		line-height: 2.25;
+		color: #8c8f94;
+	}
+	&__type {
+		display: block;
+		font: 400 18px/26px 'HelveticaNeueCyr-Medium', Arial, sans-serif;
+		color: $black;
+	}
+	&__content {
+		font: 300 18px/30px 'HelveticaNeueCyr-Light', Arial, sans-serif;
+		color: $black;
+		color: $black;
+		color: #8c8f94;
 	}
 }

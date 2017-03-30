@@ -60,6 +60,9 @@
 
 .main {
 	background-color: #eff0f5;
+	@include MQ(Pp) {
+		margin-top: $headerHeight * .6;
+	}
 }
 @import "./sections/header";
 @import "./sections/footer";

@@ -6,6 +6,9 @@
 	size: 100% calc(90vh - 100px);
 	background: url('../assets/img/intro.jpg') no-repeat center center;
 	background-size: cover;
+	@include MQ(Pp) {
+		height: 100vh;
+	}
 	&__title {
 		width: 900px;
 		font-weight: 100;
@@ -25,6 +28,9 @@
 		display: flex;
 		margin-top: 10%;
 		@include MQ(Pp) {
+			flex-flow: column wrap;
+			justify-content: center;
+			align-items: center;
 			margin-top: 10%;
 		}
 	}
@@ -49,8 +55,16 @@
 		}
 		&._green {
 			padding: 0 52px;
+			padding-left: 26px;
 			margin-left: 38px;
+			@include MQ(Pp) {
+				margin-top: 20px;
+				margin-left: 0;
+			}
 			background-color: $green;
+			svg {
+				margin-right: 25px;
+			}
 		}
     }
 }

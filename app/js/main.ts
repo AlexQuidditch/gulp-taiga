@@ -20,10 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		cellSelector: '.clients-item',
 		wrapAround: true,
 		arrowShape: { x0: 25, x1: 60, y1: 40, x2: 65, y2: 35, x3: 35 }
-	});
-
-	document.getElementById('contacts-btn').addEventListener('click', () => {
-		document.getElementById('contacts-btn').classList.add('is-visible')
-	});
+	})
 
 });
