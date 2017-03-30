@@ -10,12 +10,29 @@ declare const $: any;
         $('html, body').animate({
             scrollTop: anchor.offset().top
         }, 750);
-    });
+    })
 })();
 
 'use strict'
 
 document.addEventListener('DOMContentLoaded', () => {
+
+	const buttonUp = $('#buttonUp');
+    //	Button Up
+    $('body').scroll(function () {
+        if ($(this).scrollTop() > 700) {
+            buttonUp.addClass('is-visible')
+        } else {
+            buttonUp.removeClass('is-visible')
+        }
+    });
+    buttonUp.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 750);
+        return false
+    })
+
 	$("#RangeSlider").ionRangeSlider({
 		type: "single",
 		min: 10,
@@ -32,6 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Header Menu trigger
 	document.getElementById('trigger').addEventListener('click', () => {
 		document.getElementById('headerMenu').classList.toggle('_opened')
+	});
+
+	document.getElementById('contacts-btn').addEventListener('click', () => {
+		console.log(this)
 	});
 
 	// Form Logic
@@ -120,25 +141,5 @@ document.addEventListener('DOMContentLoaded', () => {
 		e.preventDefault();
 		document.getElementById('overlay').classList.remove('_opened')
 	});
-
-	const confirm = {
-		title: 'Секундочку!',
-		text: 'Отправляем данные...',
-		type: 'info',
-		showConfirmButton: false,
-		allowOutsideClick: false
-	},
-		success = {
-			title: 'Отлично!',
-			text: 'Мы скоро с Вами свяжемся!',
-			type: 'success',
-			showCloseButton: true
-		},
-		error = {
-			title: 'Упс...',
-			text: 'Что-то пошло не так! Проверьте правильность данных!',
-			type: 'error',
-			showCloseButton: true
-		};
 
 });
