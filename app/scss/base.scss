@@ -95,3 +95,18 @@
 		border-radius: 50%;
 	}
 }
+
+.button-up {
+    z-index: 1000;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    padding: 10px;
+    margin: 40px;
+    cursor: pointer;
+    transform: translateX(-200%);
+    transition: transform .6s ease-in-out .3s;
+    &.is-visible {
+        transform: translateX(0);
+    }
+}

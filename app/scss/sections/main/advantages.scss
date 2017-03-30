@@ -22,6 +22,7 @@
 
 	.container_flex-row {
 		justify-content: space-between;
+		align-items: flex-start;
 	}
 
 	.container_flex-column {
@@ -50,8 +51,6 @@
 		size: 135px;
 		margin-bottom: 35px;
 		background-color: transparent;
-		border: solid 2px $black;
-		border-radius: 50%;
 	}
 
 	&__headline {

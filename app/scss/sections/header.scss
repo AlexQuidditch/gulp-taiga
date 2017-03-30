@@ -8,6 +8,7 @@
 	border-bottom: solid 1px $grey;
 	@include MDShadow-2;
 	@include MQ(Pp) {
+		position: fixed 0 auto auto 0;
 		height: $headerHeight * 0.6;
 	}
 	@include MQ(Pl) {

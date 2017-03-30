@@ -11,7 +11,7 @@
 		font-weight: 100;
 		line-height: 1.39;
 		text-align: center;
-		color: $white;
+		color: $black;
 		@include MQ(Pp) {
 			width: auto;
 			font-size: 2.5rem;
@@ -22,6 +22,7 @@
 		}
 	}
 	&__subtitle {
+		display: flex;
 		margin-top: 10%;
 		@include MQ(Pp) {
 			margin-top: 10%;
@@ -45,6 +46,11 @@
 		}
 		@include MQ(Pp) {
 			margin-top: 0;
+		}
+		&._green {
+			padding: 0 52px;
+			margin-left: 38px;
+			background-color: $green;
 		}
     }
 }

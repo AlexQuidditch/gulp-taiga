@@ -58,24 +58,6 @@
 		background-color: transparent;
 		border: solid 2px $black;
 		border-radius: 50%;
-		.advantages-item:nth-child(2) & {
-			&::before {
-				content: '';
-				position: absolute;
-				width: 295px;
-				height: 5px;
-				border-top: dotted 5px $black;
-				transform: translateX(-75%);
-			}
-			&::after {
-				content: '';
-				position: absolute;
-				width: 295px;
-				height: 5px;
-				border-top: dotted 5px $black;
-				transform: translateX(75%);
-			}
-		}
 	}
 
 	&__headline {

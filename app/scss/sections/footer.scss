@@ -208,6 +208,16 @@
 	}
 }
 
+.copyright {
+	height: 100px;
+	background-color: #202020;
+	&__text {
+		font-size: 14px;
+		line-height: 1.71;
+		color: $white
+	}
+}
+
 #fbIcon {
 	size: 25px;
 
