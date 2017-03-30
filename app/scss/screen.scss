@@ -1,0 +1,52 @@
+@import "./sections/advertising/intro";
+@import "./sections/advertising/title";
+@import "./sections/advertising/navigate";
+@import "./sections/advertising/services";
+@import "./sections/advertising/clients";
+@import "./sections/advertising/banner";
+@import "./sections/advertising/offer";
+@import "./sections/production/advantages";
+@import "./sections/production/player";
+
+.arrowIconSvg {
+	fill: none;
+	stroke: $white;
+	stroke-miterlimit: 10;
+	stroke-width: 20px;
+}
+
+#arrowIconSvg {
+	margin-left: 19px;
+}
+
+.services {
+	background-color: #eff0f5;
+}
+
+.services-item__button-order {
+	padding: 0 20px 0 30px;
+}
+
+#logo-svg-small {
+	width: 130px;
+	position: absolute;
+	left: 0;
+	@include MQ(Pp) {
+		width: 75px
+	};
+	.st1 {
+		fill: #627BCD;
+	}
+
+	.st2 {
+		fill: #595959;
+	}
+
+	.st3 {
+		opacity: 0.9;
+	}
+
+	.st4 {
+		fill: #6886D8;
+	}
+}
