@@ -1,5 +1,16 @@
 declare const $: any;
 
+
+window.onscroll = () => {
+	let buttonUp: any = document.getElementById('buttonUp');
+	let scrolled: number = window.pageYOffset || document.documentElement.scrollTop;
+	if (scrolled > 700) {
+		buttonUp.classList.add('is-visible')
+	} else {
+		buttonUp.classList.remove('is-visible')
+	}
+};
+
 (function() {
     $('[data-roll]').on('click', function(e) {
         e.preventDefault();
@@ -14,15 +25,7 @@ declare const $: any;
 })();
 
 $(document).ready(function() {
-	const buttonUp = $('#buttonUp');
-    //	Button Up
-    $('body').scroll(function () {
-        if ($(this).scrollTop() > 700) {
-            buttonUp.addClass('is-visible')
-        } else {
-            buttonUp.removeClass('is-visible')
-        }
-    });
+	let buttonUp = $('#buttonUp');
     buttonUp.click(function () {
         $('body,html').animate({
             scrollTop: 0
