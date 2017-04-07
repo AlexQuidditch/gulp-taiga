@@ -11,7 +11,9 @@
 	@include MQ(Pp) {
 		padding: 75px 0;
 	}
-
+	@include MQ(Pl) {
+		padding: 75px 0;
+	}
 	&__headline {
 		position: relative;
 		z-index: 10;
@@ -39,15 +41,17 @@
 		margin-top: 50px;
 		padding: 40px 20px;
 	}
-
+	@include MQ(Pl) {
+		width: 100%;
+		padding: 30px;
+		margin: 0;
+	}
 	&__header {
 		width: 100%;
 	}
-
 	&__headline {
 		font-size: 26px;
 		text-align: center;
-
 		&._left {
 			text-align: left;
 			@include MQ(Pp) {
@@ -55,20 +59,21 @@
 			}
 		}
 	}
-
 	&__headline-counter {
 		margin-top: 80px;
 		margin-bottom: 35px;
 		font-size: 18px;
 		font-weight: 100;
 		color: $black;
-
 		span {
 			font: 400 18px 'HelveticaNeueCyr-Medium', Arial, sans-serif;
 			color: $blue;
 		}
 		@include MQ(Pp) {
 			margin-bottom: 15px;
+		}
+		@include MQ(Pl) {
+			margin: 25px 0;
 		}
 	}
 	&__period-title {

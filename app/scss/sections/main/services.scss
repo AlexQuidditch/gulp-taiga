@@ -33,6 +33,17 @@
 		width: 100%;
 		margin: 0 0 50px;
 	}
+	@include MQ(Pl) {
+		margin: 15px 35px;
+	}
+	@include MQ(Tp) {
+		width: 49%;
+		margin: 0;
+	}
+	@include MQ(Tl) {
+		width: 49%;
+		margin: 0;
+	}
 	&__header {}
 	&__headline {
 		margin-top: 45px;
@@ -103,7 +114,7 @@
 			justify-content: center;
 			width: 80%;
 			margin-right: 0;
-			padding: 0 0 0 15%;
+			padding: 0 0 0 10%;
 		}
 	}
 

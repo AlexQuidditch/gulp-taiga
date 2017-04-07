@@ -27,13 +27,32 @@
 	padding: 0 20px 0 30px;
 }
 
+.container_flex-row {
+	position: relative;
+	@include MQ(Pp) {
+		flex-flow: row wrap;
+	}
+	@include MQ(Pl) {
+		flex-flow: row wrap;
+	}
+}
+
 #logo-svg-small {
 	width: 130px;
 	position: absolute;
+	top: auto;
 	left: 0;
 	@include MQ(Pp) {
-		width: 75px
-	};
+		width: 70px
+	}
+	@include MQ(Tp) {
+		top: 5%;
+		left: 5%;
+	}
+	@include MQ(Tl) {
+		top: 5%;
+		left: 5%;
+	}
 	.st1 {
 		fill: #627BCD;
 	}

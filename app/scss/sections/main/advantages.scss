@@ -8,7 +8,6 @@
 	z-index: -1;
 	size: 100% 1300px;
 	background-image: linear-gradient(to bottom, #cbddcf 45%, $white);
-	// background: linear-gradient(to bottom, #CBDDCF, $white);
 }
 
 .advantages {
@@ -19,16 +18,13 @@
 		height: auto;
 		padding-bottom: 50px;
 	}
-
 	.container_flex-row {
 		justify-content: space-between;
 		align-items: flex-start;
 	}
-
 	.container_flex-column {
 		justify-content: flex-start;
 	}
-
 	&__headline {
 		margin-bottom: 100px;
 		text-align: center;
@@ -46,13 +42,15 @@
 		width: 100%;
 		margin-bottom: 50px;
 	}
-
+	@include MQ(Pl) {
+		width: 100%;
+		margin-bottom: 50px;
+	}
 	&__icon {
 		size: 135px;
 		margin-bottom: 35px;
 		background-color: transparent;
 	}
-
 	&__headline {
 		margin-bottom: 1rem;
 		text-align: center;
@@ -60,7 +58,6 @@
 		font-weight: 100;
 		color: $black;
 	}
-
 	&__description {
 		font-size: 18px;
 		text-align: center;

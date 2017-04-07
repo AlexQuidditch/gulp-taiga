@@ -9,17 +9,30 @@
 		justify-content: space-between;
 		align-items: flex-start;
 	}
-
 	&__form-container {
 		width: 33%;
 		@include MQ(Pp) {
 			width: 100%;
 		}
+		@include MQ(Pl) {
+			width: 100%;
+		}
+		@include MQ(Tp) {
+			width: 45%;
+		}
+		@include MQ(Tl) {
+			width: 45%;
+		}
 	}
-
 	&__content {
 		@include MQ(Pp) {
 			margin-top: 30px;
+		}
+		@include MQ(Tp) {
+			width: 55%;
+		}
+		@include MQ(Tl) {
+			width: 55%;
 		}
 	}
 }
@@ -28,11 +41,9 @@
 	$opacity: 0.4;
 	$opacityHover: 0.6;
 	width: 100%;
-
 	&__header {
 		width: 100%;
 	}
-
 	&__title {
 		margin-bottom: 45px;
 		font-size: 42px;
@@ -41,12 +52,13 @@
 		@include MQ(Pp) {
 			text-align: center;
 		}
+		@include MQ(Pl) {
+			text-align: center;
+		}
 	}
-
 	&__body {
 		width: 100%;
 	}
-
 	&__row {
 		width: 100%;
 		margin-bottom: 20px;
@@ -127,7 +139,6 @@
 		cursor: default;
 		user-select: none;
 		transition: opacity 0.3s ease-in-out;
-
 		&._is-show {
 			opacity: 0.7;
 		}
@@ -148,7 +159,16 @@
 	@include MQ(Pp) {
 		margin-top: 30px;
 	}
-
+	@include MQ(Pl) {
+		margin: 0 15px;
+		margin-top: 30px
+	}
+	@include MQ(Tp) {
+		margin-left: 20px;
+	}
+	@include MQ(Tl) {
+		margin-left: 20px;
+	}
 	&._social {
 		display: flex;
 		flex-flow: row wrap;
@@ -156,7 +176,6 @@
 		align-items: center;
 		margin: 20px 0 0;
 	}
-
 	&__headline {
 		display: block;
 		margin-bottom: 25px;
@@ -164,14 +183,12 @@
 		letter-spacing: 1.2px;
 		color: $black;
 	}
-
 	&__item {
 		font-size: 1rem;
 		font-weight: 300;
 		line-height: 2.25;
 		color: #8c8f94;
 	}
-
 	&__type {
 		display: block;
 		color: $black;
@@ -179,26 +196,37 @@
 		font-weight: bold;
 		line-height: 1.5;
 	}
-
 	&__content {
 		font-size: 1rem;
 		font-weight: 300;
 		line-height: 2.25;
 		color: #8c8f94;
 	}
-
 	&__social-item {
 		margin-right: 15px;
 	}
-
 	&__social-icon {
 		size: 25px;
 	}
 }
 
 .copyright {
+	display: flex;
+	justify-content: flex-start;
 	height: 100px;
 	background-color: #202020;
+	@include MQ(Pp) {
+		justify-content: center;
+	}
+	@include MQ(Pl) {
+		justify-content: center;
+	}
+	@include MQ(Tp) {
+		justify-content: center;
+	}
+	@include MQ(Tl) {
+		justify-content: center;
+	}
 	&__text {
 		font-size: 14px;
 		line-height: 1.71;
@@ -208,11 +236,9 @@
 
 #fbIcon {
 	size: 25px;
-
 	.fbIcon {
 		fill: #3B5998;
 	}
-
 	.fbIcon1 {
 		fill: #fff;
 	}
@@ -220,7 +246,6 @@
 
 #okIcon {
 	size: 25px;
-
 	.okIcon {
 		fill: #ee8330;
 	}
@@ -228,11 +253,9 @@
 
 #vkIcon {
 	size: 25px;
-
 	.vkIcon-1 {
 		fill: #4d76a1;
 	}
-
 	.vkIcon-2 {
 		fill: #fff;
 	}

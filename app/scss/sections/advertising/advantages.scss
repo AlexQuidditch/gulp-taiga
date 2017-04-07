@@ -13,7 +13,6 @@
 .advantages {
 	z-index: 10;
 	position: relative;
-	padding-top: 80px;
 	padding-bottom: 140px;
 	@include MQ(Pp) {
 		height: auto;
@@ -21,6 +20,7 @@
 	}
 	.container_flex-row {
 		justify-content: space-between;
+		align-items: flex-start;
 	}
 	.container_flex-column {
 		justify-content: flex-start;
@@ -42,18 +42,14 @@
 		width: 100%;
 		margin-bottom: 50px;
 	}
-	&__counter {
-		position: relative;
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: center;
-		align-items: center;
+	@include MQ(Pl) {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	&__icon {
 		size: 135px;
 		margin-bottom: 35px;
-		font: 700 32px 'HelveticaNeueCyr-Black', Arial, Sans-serif;
 		background-color: transparent;
-		border: solid 2px $black;
-		border-radius: 50%;
 	}
 	&__headline {
 		margin-bottom: 1rem;
@@ -63,14 +59,6 @@
 		color: $black;
 	}
 	&__description {
-		font-size: 18px;
-		text-align: center;
-		color: $black;
-		@include MQ(Pp) {
-			line-height: 1.5rem;
-		}
-	}
-	p {
 		font-size: 18px;
 		text-align: center;
 		color: $black;

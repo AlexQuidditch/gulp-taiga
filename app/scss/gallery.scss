@@ -81,6 +81,15 @@
 	@include MQ(Pp) {
 		display: none;
 	}
+	@include MQ(Pl) {
+		display: none
+	}
+	@include MQ(Tp) {
+		margin-left: 0;
+	}
+	@include MQ(Tl) {
+		margin-left: 0;
+	}
 }
 
 .header__menu {

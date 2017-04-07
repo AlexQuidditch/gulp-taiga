@@ -9,6 +9,12 @@
 	@include MQ(Pp) {
 		height: 100vh;
 	}
+	@include MQ(Pl) {
+		height: auto;
+	}
+	.container_flex-column {
+		padding: 20px 0;
+	}
 	&__title {
 		width: 900px;
 		font-weight: 100;
@@ -60,6 +66,9 @@
 			@include MQ(Pp) {
 				margin-top: 20px;
 				margin-left: 0;
+			}
+			@include MQ(Pl) {
+				padding-right: 26px;
 			}
 			background-color: $green;
 			svg {

@@ -25,6 +25,8 @@
 			flex-direction: row;
 			justify-content: space-between;
 		}
+		@include MQ(Tp) {}
+		@include MQ(Tl) {}
 	}
 	&__logo {
 		size: 196px 59px;
@@ -46,7 +48,13 @@
 		}
 		@include MQ(Pl) {
 			display: none;
-		}
+			}
+			@include MQ(Tp) {
+				margin-left: 0;
+			}
+			@include MQ(Tl) {
+				margin-left: 0;
+			}
 		&._mobile {
 			z-index: 999;
 			position: absolute;
@@ -146,6 +154,12 @@
 	justify-content: flex-end;
 	flex-basis: 20%;
 	height: 100%;
+	@include MQ(Tp) {
+		flex-basis: 10%
+	}
+	@include MQ(Tl) {
+		flex-basis: 10%
+	}
 	&__button {
 		display: flex;
 		flex-flow: row wrap;
@@ -168,9 +182,51 @@
 				display: none;
 			}
 			@include MQ(Pl) {
-				margin-left: 5px;
+				display: none;
 			}
 		}
+	}
+}
+
+.header-profile {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin-left: 60px;
+	@include MQ(Pp) {
+		margin-left: 30px;
+	}
+	@include MQ(Tp) {
+		margin-left: 0;
+	}
+	@include MQ(Tl) {
+		margin-left: 0;
+	}
+	&__link {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	&__name {
+		text-align: right;
+		font: 700 1rem 'HelveticaNeueCyr-Bold', Arial,sans-serif;
+		@include MQ(Pp) {
+			display: none;
+		}
+		@include MQ(Tp) {
+			display: none;
+		}
+		@include MQ(Tl) {
+			display: none;
+		}
+	}
+	&__avatar {
+		width: 50px;
+		margin: 0 20px;
+		border-radius: 50%;
 	}
 }
 

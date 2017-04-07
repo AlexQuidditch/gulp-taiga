@@ -9,6 +9,9 @@
 	@include MQ(Pp) {
 		bottom: -270px;
 	}
+	@include MQ(Pl) {
+		bottom: auto;
+	}
 	&__slider {
 		size: 950px 250px;
 		@include MQ(Pp) {
@@ -36,6 +39,14 @@
 			top: 240px;
 			left: 15%;
 			width: 70%;
+		}
+		@include MQ(Tp) {
+			top: 235px;
+			right: 40%;
+		}
+		@include MQ(Tl) {
+			top: 235px;
+			right: 40%;
 		}
 	}
 	&__news-button {
